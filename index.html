@@ -359,12 +359,12 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
       <div class="form-title">CLAIM YOUR FREE QUOTE</div>
       <div class="form-row">
         <div class="form-group"><label>First Name</label><input type="text" id="firstName" placeholder="John"></div>
-        <div class="form-group"><label>Last Name</label><input type="text" placeholder="Smith"></div>
+        <div class="form-group"><label>Last Name</label><input type="text" id="lastName" placeholder="Smith"></div>
       </div>
       <div class="form-group"><label>Phone Number</label><input type="tel" id="phone" placeholder="(919) 555-0100"></div>
       <div class="form-row">
-        <div class="form-group"><label>Vehicle Make</label><input type="text" placeholder="BMW"></div>
-        <div class="form-group"><label>Vehicle Model</label><input type="text" placeholder="M3"></div>
+        <div class="form-group"><label>Vehicle Make</label><input type="text" id="vehicleMake" placeholder="BMW"></div>
+        <div class="form-group"><label>Vehicle Model</label><input type="text" id="vehicleModel" placeholder="M3"></div>
       </div>
       <button class="form-submit" id="formSubmit">Claim Your Quote Now →</button>
       <p class="form-note">By submitting you agree to be contacted by Tang Detailing. No spam. Your info is never shared.</p>
@@ -610,8 +610,23 @@ baVideo.addEventListener('ended',()=>{
 
 document.getElementById('formSubmit').addEventListener('click',function(){
   const firstName=document.getElementById('firstName').value;
+  const lastName=document.getElementById('lastName').value;
   const phone=document.getElementById('phone').value;
+  const make=document.getElementById('vehicleMake').value;
+  const model=document.getElementById('vehicleModel').value;
   if(firstName&&phone){
+    fetch('https://services.leadconnectorhq.com/hooks/ZA7ivyQROFKODWhJoO07/webhook-trigger/cbbe33f9-4d11-4f0b-bb91-52d03a74f387',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        firstName:firstName,
+        lastName:lastName,
+        phone:phone,
+        vehicleMake:make,
+        vehicleModel:model,
+        source:'Tang Detailing Landing Page'
+      })
+    }).catch(err=>console.log('Webhook error:',err));
     if(typeof fbq!=='undefined') fbq('track','Lead');
     setTimeout(()=>{ window.location.href='thank-you.html'; },300);
   }
