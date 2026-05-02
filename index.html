@@ -628,7 +628,7 @@ document.getElementById('formSubmit').addEventListener('click',function(){
       })
     }).catch(err=>console.log('Webhook error:',err));
     if(typeof fbq!=='undefined') fbq('track','Lead');
-    setTimeout(()=>{ window.location.href='thank-you.html'; },300);
+    setTimeout(()=>{ window.location.href='/thank-you'; },300);
   }
 });
 
