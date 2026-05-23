@@ -100,19 +100,36 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .video-progress{position:absolute;bottom:0;left:0;right:0;height:3px;background:rgba(255,255,255,0.08);z-index:4;}
 .video-progress-bar{height:100%;background:var(--blue);width:0%;transition:width 0.1s linear;}
 
+/* FORM SECTION */
 .form-section{padding:88px 80px;background:var(--navy);border-top:1px solid var(--border);}
 .form-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
 .sec-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
 .sec-label::before{content:'';display:block;width:24px;height:1px;background:var(--blue);}
 .sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,4vw,56px);letter-spacing:2px;line-height:1;margin-bottom:16px;}
 .sec-title .blue{color:var(--blue);}
-.sec-desc{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:28px;}
-.guarantee-badge{display:flex;align-items:flex-start;gap:16px;background:rgba(43,123,232,0.1);border:1px solid var(--border-blue);border-left:3px solid var(--blue);padding:20px 24px;border-radius:2px;margin-top:8px;}
+
+/* PROGRESS BAR */
+.offer-progress{background:rgba(8,9,10,0.5);border:1px solid var(--border-blue);border-radius:4px;padding:24px 28px;margin-bottom:24px;}
+.offer-progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.offer-progress-label{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);}
+.offer-progress-count{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--muted);}
+.offer-progress-count strong{color:var(--white);}
+.offer-progress-bar-wrap{background:rgba(255,255,255,0.08);border-radius:4px;height:10px;overflow:hidden;margin-bottom:10px;}
+.offer-progress-bar-fill{height:100%;width:14%;background:var(--blue);border-radius:4px;transition:width 0.6s ease;}
+.offer-progress-footer{display:flex;justify-content:space-between;}
+.offer-progress-foot-text{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;color:var(--muted-2);}
+.offer-progress-activity{margin-top:16px;padding-top:16px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:8px;}
+.offer-activity-item{display:flex;align-items:center;gap:10px;}
+.offer-activity-dot{width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;}
+.offer-activity-text{font-size:12px;color:var(--muted);}
+.offer-activity-text strong{color:var(--white);}
+
+.guarantee-badge{display:flex;align-items:flex-start;gap:16px;background:rgba(43,123,232,0.1);border:1px solid var(--border-blue);border-left:3px solid var(--blue);padding:20px 24px;border-radius:2px;}
 .guarantee-icon{width:40px;height:40px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
 .guarantee-text strong{display:block;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:1.5px;color:var(--white);margin-bottom:4px;}
 .guarantee-text p{font-size:13px;color:var(--muted);line-height:1.6;}
 .quote-form{background:var(--black);border:1px solid var(--border);padding:44px 40px;border-radius:4px;}
-.form-title{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:2px;margin-bottom:24px;}
+.form-title{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:2px;margin-bottom:24px;line-height:1.1;}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 .form-group{margin-bottom:14px;}
 .form-group label{display:block;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:7px;}
@@ -246,7 +263,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
   <a href="#quote" class="nav-cta">Claim Offer Now</a>
 </nav>
 
-<section class="hero">
+<section class="hero" id="hero">
   <div class="hero-video-wrap">
     <video autoplay muted loop playsinline>
       <source src="/videos/hero-video.mp4" type="video/mp4">
@@ -255,12 +272,12 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Ceramic Coating · Raleigh, NC</div>
-    <h1 class="hero-headline"><span class="blue">$200 OFF</span><br>COATING +<br>INTERIOR DETAIL</h1>
+    <h1 class="hero-headline"><span class="blue">$200 OFF</span><br>COATING +<br>FREE INTERIOR<br>DETAIL</h1>
     <div class="hero-offer-tag">
       <span>⚡ Limited —</span>
       <strong>Next 7 Customers Only</strong>
     </div>
-    <p class="hero-sub">Get years of paint protection plus a full interior detail — bundled together at $200 off. Only 7 spots available at this price.</p>
+    <p class="hero-sub">Get years of paint protection plus a FREE interior detail — bundled together at $200 off the coating. Only 7 spots available at this price.</p>
     <div class="hero-cta-wrap">
       <a href="#quote" class="btn-primary">
         Claim Offer Now
@@ -273,7 +290,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
         <div class="stat-label">5-Star Reviews</div>
       </div>
       <div class="hero-stat">
-        <div class="stat-num"><span class="counter" data-target="500">0</span><span class="blue">+</span></div>
+        <div class="stat-num"><span class="counter" data-target="200">0</span><span class="blue">+</span></div>
         <div class="stat-label">Vehicles Coated</div>
       </div>
       <div class="hero-stat">
@@ -349,9 +366,29 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
 <section class="form-section" id="quote">
   <div class="form-inner">
     <div class="form-left fade-up">
-      <div class="sec-label">Claim Your Offer</div>
-      <h2 class="sec-title">$200 OFF COATING +<br><span class="blue">INTERIOR DETAIL</span></h2>
-      <p class="sec-desc">Tell Tang what you're driving. He'll get back to you fast with exactly what your vehicle needs — no packages, no pressure. Only 7 spots at this price.</p>
+
+      <!-- PROGRESS BAR -->
+      <div class="offer-progress">
+        <div class="offer-progress-header">
+          <span class="offer-progress-label">⚡ Limited Offer</span>
+          <span class="offer-progress-count">Only <strong>6 spots</strong> left</span>
+        </div>
+        <div class="offer-progress-bar-wrap">
+          <div class="offer-progress-bar-fill"></div>
+        </div>
+        <div class="offer-progress-footer">
+          <span class="offer-progress-foot-text">1 of 7 claimed</span>
+          <span class="offer-progress-foot-text">Offer expires when filled</span>
+        </div>
+        <div class="offer-progress-activity">
+          <div class="offer-activity-item">
+            <div class="offer-activity-dot"></div>
+            <span class="offer-activity-text">Someone in <strong>Raleigh, NC</strong> claimed their spot — 2 hrs ago</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GUARANTEE -->
       <div class="guarantee-badge">
         <div class="guarantee-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -362,8 +399,9 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
         </div>
       </div>
     </div>
+
     <div class="quote-form fade-up">
-      <div class="form-title">CLAIM YOUR $200 OFFER</div>
+      <div class="form-title">FILL OUT YOUR INFO TO CLAIM OFFER</div>
       <div class="form-row">
         <div class="form-group"><label>First Name</label><input type="text" id="firstName" placeholder="John"></div>
         <div class="form-group"><label>Last Name</label><input type="text" id="lastName" placeholder="Smith"></div>
@@ -418,8 +456,8 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
   <div class="warranty-inner fade-up">
     <span class="warranty-big"><span class="counter" data-target="6">0</span></span>
     <span class="warranty-unit">Month Warranty Check-In</span>
-    <h3 class="warranty-title">TANG COMES BACK TO YOU</h3>
-    <p class="warranty-text">Six months after your coating, Tang personally returns to inspect adhesion, gloss retention, and hydrophobic performance. Not a phone call — boots on the ground.</p>
+    <h3 class="warranty-title">WE SCHEDULE A CHECK-IN AT 6 MONTHS</h3>
+    <p class="warranty-text">Six months after your coating, Tang schedules a dedicated check-in appointment to inspect adhesion, gloss retention, and hydrophobic performance. If anything isn't up to standard, it gets addressed — you can come to him or work out a time that fits your schedule.</p>
     <a href="#quote" class="btn-primary" style="margin:0 auto;">
       Claim Offer Now
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -559,7 +597,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
           <span class="faq-q-text">What does the 6-month warranty check-in include?</span>
           <div class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
         </div>
-        <div class="faq-answer"><div class="faq-answer-inner">Six months after your coating, Tang personally comes back to inspect adhesion, gloss retention, and hydrophobic performance. If anything isn't performing as expected, he addresses it on the spot. This isn't a phone call — it's a physical inspection.</div></div>
+        <div class="faq-answer"><div class="faq-answer-inner">At 6 months we schedule a dedicated check-in appointment to inspect adhesion, gloss retention, and hydrophobic performance. If anything isn't performing as expected it gets addressed. You can come to Tang or work out a time that works for your schedule.</div></div>
       </div>
       <div class="faq-item">
         <div class="faq-question">
@@ -695,6 +733,20 @@ document.querySelectorAll('.review-card').forEach((card,i)=>{
 setTimeout(()=>{
   document.querySelectorAll('.hero-stats .counter').forEach(c=>animateCounter(c));
 },700);
+
+if(window.location.hash===''){
+  window.scrollTo(0,0);
+}
+document.querySelectorAll('a[href="#quote"]').forEach(link=>{
+  link.addEventListener('click',function(e){
+    e.preventDefault();
+    const target=document.getElementById('quote');
+    if(target){
+      const offset=target.getBoundingClientRect().top+window.scrollY-80;
+      window.scrollTo({top:offset,behavior:'smooth'});
+    }
+  });
+});
 </script>
 </body>
 </html>
