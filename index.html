@@ -60,8 +60,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .hero-content{position:relative;z-index:2;padding:60px 80px 56px;max-width:800px;width:100%;}
 .hero-eyebrow{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:22px;display:flex;align-items:center;gap:12px;animation:fadeUp 0.8s 0.1s both;}
 .hero-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--blue);}
-.hero-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,7vw,100px);line-height:0.92;letter-spacing:2px;margin-bottom:24px;animation:fadeUp 0.8s 0.2s both;}
+.hero-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,7vw,100px);line-height:0.95;letter-spacing:2px;margin-bottom:16px;animation:fadeUp 0.8s 0.2s both;}
 .hero-headline .blue{color:var(--blue);}
+.hero-offer-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(43,123,232,0.15);border:1px solid var(--border-blue);padding:8px 16px;border-radius:2px;margin-bottom:20px;animation:fadeUp 0.8s 0.25s both;}
+.hero-offer-tag span{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);}
+.hero-offer-tag strong{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--white);}
 .hero-sub{font-size:16px;font-weight:300;color:var(--muted);max-width:500px;margin-bottom:40px;line-height:1.75;animation:fadeUp 0.8s 0.3s both;}
 .hero-cta-wrap{animation:fadeUp 0.8s 0.4s both;}
 .btn-primary{background:var(--blue);color:#fff;font-family:'Inter',sans-serif;font-weight:500;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:16px 40px;border:none;cursor:pointer;text-decoration:none;transition:background 0.2s,transform 0.15s;border-radius:2px;display:inline-flex;align-items:center;gap:10px;}
@@ -145,7 +148,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .gallery-inner{max-width:1120px;margin:0 auto;}
 .gallery-stage{position:relative;margin-top:48px;border-radius:4px;overflow:hidden;background:var(--navy);}
 .gallery-img-wrap{position:relative;aspect-ratio:16/9;overflow:hidden;}
-.gallery-img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;opacity:0;transition:opacity 0.5s ease;}
+.gallery-img{width:100%;height:100%;object-fit:cover;object-position:left center;display:block;position:absolute;inset:0;opacity:0;transition:opacity 0.5s ease;}
 .gallery-img.active{opacity:1;position:relative;}
 .gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,9,10,0.5) 0%,transparent 50%);pointer-events:none;z-index:2;}
 .gallery-controls-bar{padding:20px 24px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);}
@@ -240,7 +243,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
       <span class="nav-review-count">150+</span>
     </div>
   </div>
-  <a href="#quote" class="nav-cta">Claim Your Quote Now</a>
+  <a href="#quote" class="nav-cta">Claim Offer Now</a>
 </nav>
 
 <section class="hero">
@@ -252,11 +255,15 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Ceramic Coating · Raleigh, NC</div>
-    <h1 class="hero-headline">TURN YOUR CAR<br>BACK TO<br><span class="blue">BRAND NEW.</span></h1>
-    <p class="hero-sub">Get years of protection while spending just 30 minutes a month keeping your paint glossier, cleaner, and easier to maintain.</p>
+    <h1 class="hero-headline"><span class="blue">$200 OFF</span><br>COATING +<br>INTERIOR DETAIL</h1>
+    <div class="hero-offer-tag">
+      <span>⚡ Limited —</span>
+      <strong>Next 7 Customers Only</strong>
+    </div>
+    <p class="hero-sub">Get years of paint protection plus a full interior detail — bundled together at $200 off. Only 7 spots available at this price.</p>
     <div class="hero-cta-wrap">
       <a href="#quote" class="btn-primary">
-        Claim Your Quote Now
+        Claim Offer Now
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -342,9 +349,9 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
 <section class="form-section" id="quote">
   <div class="form-inner">
     <div class="form-left fade-up">
-      <div class="sec-label">Get Your Quote</div>
-      <h2 class="sec-title">PROTECT YOUR CAR THE <span class="blue">RIGHT WAY</span></h2>
-      <p class="sec-desc">Tell Tang what you're driving. He'll get back to you fast with exactly what your vehicle needs — no packages, no pressure.</p>
+      <div class="sec-label">Claim Your Offer</div>
+      <h2 class="sec-title">$200 OFF COATING +<br><span class="blue">INTERIOR DETAIL</span></h2>
+      <p class="sec-desc">Tell Tang what you're driving. He'll get back to you fast with exactly what your vehicle needs — no packages, no pressure. Only 7 spots at this price.</p>
       <div class="guarantee-badge">
         <div class="guarantee-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -356,7 +363,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
       </div>
     </div>
     <div class="quote-form fade-up">
-      <div class="form-title">CLAIM YOUR FREE QUOTE</div>
+      <div class="form-title">CLAIM YOUR $200 OFFER</div>
       <div class="form-row">
         <div class="form-group"><label>First Name</label><input type="text" id="firstName" placeholder="John"></div>
         <div class="form-group"><label>Last Name</label><input type="text" id="lastName" placeholder="Smith"></div>
@@ -366,7 +373,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
         <div class="form-group"><label>Vehicle Make</label><input type="text" id="vehicleMake" placeholder="BMW"></div>
         <div class="form-group"><label>Vehicle Model</label><input type="text" id="vehicleModel" placeholder="M3"></div>
       </div>
-      <button class="form-submit" id="formSubmit">Claim Your Quote Now →</button>
+      <button class="form-submit" id="formSubmit">Claim Offer Now →</button>
       <p class="form-note">By submitting you agree to be contacted by Tang Detailing. No spam. Your info is never shared.</p>
     </div>
   </div>
@@ -382,9 +389,8 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
         <div class="process-step-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         </div>
-        <div class="process-step-title">Request A Free Quote</div>
+        <div class="process-step-title">Claim Your Offer</div>
         <p class="process-step-desc">Fill out the form with your vehicle info. Tang reviews it personally and gets back to you within 24 hours with exactly what your car needs.</p>
-        <a href="#quote" class="btn-primary" style="margin-top:24px;font-size:11px;padding:12px 24px;">Claim Your Quote Now</a>
       </div>
       <div class="process-step fade-up">
         <div class="process-step-num">02</div>
@@ -415,7 +421,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
     <h3 class="warranty-title">TANG COMES BACK TO YOU</h3>
     <p class="warranty-text">Six months after your coating, Tang personally returns to inspect adhesion, gloss retention, and hydrophobic performance. Not a phone call — boots on the ground.</p>
     <a href="#quote" class="btn-primary" style="margin:0 auto;">
-      Claim Your Quote Now
+      Claim Offer Now
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
   </div>
@@ -508,7 +514,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
     </div>
     <div class="reviews-cta fade-up">
       <a href="#quote" class="btn-primary">
-        Claim Your Quote Now
+        Claim Offer Now
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
