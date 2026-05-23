@@ -100,7 +100,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .video-progress{position:absolute;bottom:0;left:0;right:0;height:3px;background:rgba(255,255,255,0.08);z-index:4;}
 .video-progress-bar{height:100%;background:var(--blue);width:0%;transition:width 0.1s linear;}
 
-/* FORM SECTION */
 .form-section{padding:88px 80px;background:var(--navy);border-top:1px solid var(--border);}
 .form-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
 .sec-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
@@ -108,14 +107,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,4vw,56px);letter-spacing:2px;line-height:1;margin-bottom:16px;}
 .sec-title .blue{color:var(--blue);}
 
-/* PROGRESS BAR */
 .offer-progress{background:rgba(8,9,10,0.5);border:1px solid var(--border-blue);border-radius:4px;padding:24px 28px;margin-bottom:24px;}
 .offer-progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
 .offer-progress-label{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);}
 .offer-progress-count{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--muted);}
 .offer-progress-count strong{color:var(--white);}
 .offer-progress-bar-wrap{background:rgba(255,255,255,0.08);border-radius:4px;height:10px;overflow:hidden;margin-bottom:10px;}
-.offer-progress-bar-fill{height:100%;width:14%;background:var(--blue);border-radius:4px;transition:width 0.6s ease;}
+.offer-progress-bar-fill{height:100%;width:14%;background:var(--blue);border-radius:4px;}
 .offer-progress-footer{display:flex;justify-content:space-between;}
 .offer-progress-foot-text{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;color:var(--muted-2);}
 .offer-progress-activity{margin-top:16px;padding-top:16px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:8px;}
@@ -129,7 +127,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .guarantee-text strong{display:block;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:1.5px;color:var(--white);margin-bottom:4px;}
 .guarantee-text p{font-size:13px;color:var(--muted);line-height:1.6;}
 .quote-form{background:var(--black);border:1px solid var(--border);padding:44px 40px;border-radius:4px;}
-.form-title{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:2px;margin-bottom:24px;line-height:1.1;}
+.form-title{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;margin-bottom:24px;line-height:1.1;}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 .form-group{margin-bottom:14px;}
 .form-group label{display:block;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:7px;}
@@ -366,8 +364,6 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
 <section class="form-section" id="quote">
   <div class="form-inner">
     <div class="form-left fade-up">
-
-      <!-- PROGRESS BAR -->
       <div class="offer-progress">
         <div class="offer-progress-header">
           <span class="offer-progress-label">⚡ Limited Offer</span>
@@ -387,8 +383,6 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
           </div>
         </div>
       </div>
-
-      <!-- GUARANTEE -->
       <div class="guarantee-badge">
         <div class="guarantee-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -399,7 +393,6 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
         </div>
       </div>
     </div>
-
     <div class="quote-form fade-up">
       <div class="form-title">FILL OUT YOUR INFO TO CLAIM OFFER</div>
       <div class="form-row">
@@ -619,6 +612,11 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
 </footer>
 
 <script>
+if(window.location.hash){
+  history.replaceState(null,null,' ');
+}
+window.scrollTo(0,0);
+
 function animateCounter(el){
   const target=parseInt(el.dataset.target);
   const steps=1800/16;
@@ -697,6 +695,17 @@ document.addEventListener('keydown',e=>{
   if(e.key==='ArrowLeft') goTo((cur-1+imgs.length)%imgs.length);
 });
 
+document.querySelectorAll('a[href="#quote"]').forEach(link=>{
+  link.addEventListener('click',function(e){
+    e.preventDefault();
+    const target=document.getElementById('quote');
+    if(target){
+      const offset=target.getBoundingClientRect().top+window.scrollY-80;
+      window.scrollTo({top:offset,behavior:'smooth'});
+    }
+  });
+});
+
 document.querySelectorAll('.faq-question').forEach(q=>{
   q.addEventListener('click',()=>{
     const item=q.parentElement;
@@ -733,20 +742,6 @@ document.querySelectorAll('.review-card').forEach((card,i)=>{
 setTimeout(()=>{
   document.querySelectorAll('.hero-stats .counter').forEach(c=>animateCounter(c));
 },700);
-
-if(window.location.hash===''){
-  window.scrollTo(0,0);
-}
-document.querySelectorAll('a[href="#quote"]').forEach(link=>{
-  link.addEventListener('click',function(e){
-    e.preventDefault();
-    const target=document.getElementById('quote');
-    if(target){
-      const offset=target.getBoundingClientRect().top+window.scrollY-80;
-      window.scrollTo({top:offset,behavior:'smooth'});
-    }
-  });
-});
 </script>
 </body>
 </html>
