@@ -108,25 +108,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,4vw,56px);letter-spacing:2px;line-height:1;margin-bottom:16px;}
 .sec-title .blue{color:var(--blue);}
 
-.offer-progress{background:rgba(8,9,10,0.5);border:1px solid var(--border-blue);border-radius:4px;padding:24px 28px;margin-bottom:24px;}
-.offer-progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
-.offer-progress-label{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);}
-.offer-progress-count{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--muted);}
-.offer-progress-count strong{color:var(--white);}
-.offer-progress-bar-wrap{background:rgba(255,255,255,0.08);border-radius:4px;height:10px;overflow:hidden;margin-bottom:10px;}
-.offer-progress-bar-fill{height:100%;width:14%;background:var(--blue);border-radius:4px;}
-.offer-progress-footer{display:flex;justify-content:space-between;}
-.offer-progress-foot-text{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;color:var(--muted-2);}
-.offer-progress-activity{margin-top:16px;padding-top:16px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:8px;}
-.offer-activity-item{display:flex;align-items:center;gap:10px;}
-.offer-activity-dot{width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;}
-.offer-activity-text{font-size:12px;color:var(--muted);}
-.offer-activity-text strong{color:var(--white);}
+/* Guarantee Banner with photo background */
+.guarantee-banner{position:relative;border-radius:4px;overflow:hidden;height:180px;border:1px solid var(--border-blue);}
+.guarantee-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;}
+.guarantee-banner-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,9,10,0.88) 0%,rgba(13,27,42,0.78) 60%,rgba(13,27,42,0.5) 100%);}
+.guarantee-banner-content{position:relative;z-index:2;display:flex;align-items:center;gap:20px;padding:28px 32px;height:100%;}
+.guarantee-banner-icon{width:48px;height:48px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.guarantee-banner-text strong{display:block;font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:1.5px;color:var(--white);margin-bottom:6px;}
+.guarantee-banner-text p{font-size:13px;color:var(--muted);line-height:1.65;max-width:320px;}
 
-.guarantee-badge{display:flex;align-items:flex-start;gap:16px;background:rgba(43,123,232,0.1);border:1px solid var(--border-blue);border-left:3px solid var(--blue);padding:20px 24px;border-radius:2px;}
-.guarantee-icon{width:40px;height:40px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
-.guarantee-text strong{display:block;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:1.5px;color:var(--white);margin-bottom:4px;}
-.guarantee-text p{font-size:13px;color:var(--muted);line-height:1.6;}
 .quote-form{background:var(--black);border:1px solid var(--border);padding:44px 40px;border-radius:4px;}
 .form-title{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;margin-bottom:24px;line-height:1.1;}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
@@ -247,6 +237,9 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
   .reviews-header{flex-direction:column;align-items:flex-start;}
   .ticker-item img{height:40px;}
   .ticker-item{padding:0 32px;}
+  .guarantee-banner{height:auto;}
+  .guarantee-banner-content{padding:24px 20px;}
+  .guarantee-banner-text p{max-width:100%;}
 }
 </style>
 </head>
@@ -368,34 +361,22 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
 <section class="form-section" id="quote">
   <div class="form-inner">
     <div class="form-left fade-up">
-      <div class="offer-progress">
-        <div class="offer-progress-header">
-          <span class="offer-progress-label">⚡ Limited Offer</span>
-          <span class="offer-progress-count">Only <strong>6 spots</strong> left</span>
-        </div>
-        <div class="offer-progress-bar-wrap">
-          <div class="offer-progress-bar-fill"></div>
-        </div>
-        <div class="offer-progress-footer">
-          <span class="offer-progress-foot-text">1 of 7 claimed</span>
-          <span class="offer-progress-foot-text">Offer expires when filled</span>
-        </div>
-        <div class="offer-progress-activity">
-          <div class="offer-activity-item">
-            <div class="offer-activity-dot"></div>
-            <span class="offer-activity-text">Someone in <strong>Raleigh, NC</strong> claimed their spot — 2 hrs ago</span>
+
+      <!-- Guarantee Banner with photo background -->
+      <div class="guarantee-banner">
+        <img src="/images/happy-clients.jpg" alt="Happy Tang Detailing Clients" class="guarantee-bg-img">
+        <div class="guarantee-banner-overlay"></div>
+        <div class="guarantee-banner-content">
+          <div class="guarantee-banner-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="guarantee-banner-text">
+            <strong>SATISFACTION GUARANTEED</strong>
+            <p>If you're not completely satisfied with the results, Tang will make it right — no questions asked. Your investment is protected from day one.</p>
           </div>
         </div>
       </div>
-      <div class="guarantee-badge">
-        <div class="guarantee-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <div class="guarantee-text">
-          <strong>SATISFACTION GUARANTEED</strong>
-          <p>If you're not completely satisfied with the results, Tang will make it right — no questions asked. Your investment is protected from day one.</p>
-        </div>
-      </div>
+
     </div>
     <div class="quote-form fade-up">
       <div class="form-title">FILL OUT YOUR INFO TO CLAIM OFFER</div>
