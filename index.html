@@ -43,6 +43,7 @@ src="https://www.facebook.com/tr?id=1915844475637529&ev=PageView&noscript=1"
 html{scroll-behavior:smooth;}
 body{background:var(--black);color:var(--white);font-family:'Inter',sans-serif;font-weight:300;line-height:1.6;overflow-x:hidden;}
 
+/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 48px;background:rgba(8,9,10,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
 .nav-logo-wrap{display:flex;flex-direction:column;gap:3px;min-width:0;}
 .nav-logo-text{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:4px;color:var(--white);white-space:nowrap;line-height:1;}
@@ -54,6 +55,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .nav-cta{background:var(--blue);color:#fff;font-family:'Inter',sans-serif;font-weight:500;font-size:11px;letter-spacing:1px;text-transform:uppercase;padding:8px 16px;border:none;cursor:pointer;text-decoration:none;transition:background 0.2s,transform 0.15s;border-radius:2px;white-space:nowrap;flex-shrink:0;}
 .nav-cta:hover{background:var(--blue-dark);transform:translateY(-1px);}
 
+/* HERO */
 .hero{position:relative;display:flex;align-items:center;overflow:hidden;padding-top:80px;}
 .hero-video-wrap{position:absolute;inset:0;z-index:0;}
 .hero-video-wrap video{width:100%;height:100%;object-fit:cover;opacity:0.45;}
@@ -79,6 +81,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .stat-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:6px;white-space:nowrap;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
 
+/* TICKER */
 .ticker-wrap{background:#e8edf2;border-top:1px solid var(--border-blue);border-bottom:1px solid var(--border-blue);overflow:hidden;padding:20px 0;}
 .ticker-track{display:inline-flex;align-items:center;animation:ticker 40s linear infinite;white-space:nowrap;}
 .ticker-track:hover{animation-play-state:paused;}
@@ -88,6 +91,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .ticker-item img{height:56px;width:auto;background:transparent;}
 .ticker-sep{color:var(--blue);font-size:8px;opacity:0.4;}
 
+/* BEFORE/AFTER VIDEO */
 .video-section{position:relative;width:100%;background:var(--black);overflow:hidden;}
 .video-section video{width:100%;display:block;height:75vh;object-fit:cover;}
 .video-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,9,10,0.85) 0%,transparent 40%,rgba(8,9,10,0.4) 100%);pointer-events:none;z-index:2;}
@@ -101,22 +105,22 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .video-progress{position:absolute;bottom:0;left:0;right:0;height:3px;background:rgba(255,255,255,0.08);z-index:4;}
 .video-progress-bar{height:100%;background:var(--blue);width:0%;transition:width 0.1s linear;}
 
+/* CLIENTS / GUARANTEE SECTION */
+.clients-section{padding:80px;position:relative;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;}
+.clients-bg{position:absolute;inset:0;background-image:url('/assets/images/happy-clients.jpg');background-size:cover;background-position:center 40%;z-index:0;}
+.clients-bg-overlay{position:absolute;inset:0;background:rgba(8,9,10,0.75);z-index:1;}
+.clients-inner{max-width:680px;margin:0 auto;text-align:center;padding:56px 64px;border:1px solid var(--border-blue);background:rgba(13,27,42,0.75);border-radius:4px;position:relative;z-index:2;backdrop-filter:blur(4px);}
+.clients-icon{width:52px;height:52px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;}
+.clients-title{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:2px;margin-bottom:14px;color:var(--white);}
+.clients-text{font-size:14px;color:rgba(245,246,247,0.75);line-height:1.8;max-width:440px;margin:0 auto 32px;}
+
+/* FORM SECTION */
 .form-section{padding:88px 80px;background:var(--navy);border-top:1px solid var(--border);}
-.form-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.form-inner{max-width:720px;margin:0 auto;}
 .sec-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
 .sec-label::before{content:'';display:block;width:24px;height:1px;background:var(--blue);}
 .sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,4vw,56px);letter-spacing:2px;line-height:1;margin-bottom:16px;}
 .sec-title .blue{color:var(--blue);}
-
-/* Guarantee Banner with photo background */
-.guarantee-banner{position:relative;border-radius:4px;overflow:hidden;height:280px;border:1px solid var(--border-blue);}
-.guarantee-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%;}
-.guarantee-banner-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,9,10,0.92) 0%,rgba(8,9,10,0.5) 50%,rgba(8,9,10,0.15) 100%);}
-.guarantee-banner-content{position:relative;z-index:2;display:flex;align-items:flex-end;gap:20px;padding:28px 32px;height:100%;}
-.guarantee-banner-icon{width:48px;height:48px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.guarantee-banner-text strong{display:block;font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:1.5px;color:var(--white);margin-bottom:6px;}
-.guarantee-banner-text p{font-size:13px;color:var(--muted);line-height:1.65;max-width:320px;}
-
 .quote-form{background:var(--black);border:1px solid var(--border);padding:44px 40px;border-radius:4px;}
 .form-title{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;margin-bottom:24px;line-height:1.1;}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
@@ -132,6 +136,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .form-submit:hover{background:var(--blue-dark);transform:translateY(-1px);}
 .form-note{font-size:10px;color:var(--muted-2);margin-top:12px;line-height:1.5;}
 
+/* PROCESS */
 .process-section{padding:88px 80px;background:var(--black);border-top:1px solid var(--border);}
 .process-inner{max-width:1120px;margin:0 auto;}
 .process-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:48px;}
@@ -144,8 +149,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .process-step-title{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:1.5px;margin-bottom:12px;color:var(--white);}
 .process-step-desc{font-size:13px;color:rgba(245,246,247,0.75);line-height:1.75;}
 
+/* WARRANTY */
 .warranty-section{padding:80px;position:relative;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;}
-.warranty-bg{position:absolute;inset:0;background-image:url('/images/background.1.jpg');background-size:cover;background-position:center;z-index:0;}
+.warranty-bg{position:absolute;inset:0;background-image:url('/assets/images/background.1.jpg');background-size:cover;background-position:center;z-index:0;}
 .warranty-bg-overlay{position:absolute;inset:0;background:rgba(8,9,10,0.82);z-index:1;}
 .warranty-inner{max-width:680px;margin:0 auto;text-align:center;padding:56px 64px;border:1px solid var(--border-blue);background:rgba(13,27,42,0.75);border-radius:4px;position:relative;z-index:2;backdrop-filter:blur(4px);}
 .warranty-big{font-family:'Bebas Neue',sans-serif;font-size:128px;line-height:1;color:var(--blue);letter-spacing:4px;display:block;}
@@ -153,6 +159,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .warranty-title{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:2px;margin-bottom:14px;color:var(--white);}
 .warranty-text{font-size:14px;color:rgba(245,246,247,0.75);line-height:1.8;max-width:440px;margin:0 auto 32px;}
 
+/* GALLERY */
 .gallery-section{padding:88px 80px;background:var(--black);border-top:1px solid var(--border);}
 .gallery-inner{max-width:1120px;margin:0 auto;}
 .gallery-stage{position:relative;margin-top:48px;border-radius:4px;overflow:hidden;background:var(--navy);}
@@ -168,6 +175,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .gallery-btn{width:44px;height:44px;background:var(--blue-dim);border:1px solid var(--border-blue);border-radius:2px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background 0.2s;color:var(--white);}
 .gallery-btn:hover{background:var(--blue);}
 
+/* REVIEWS */
 .reviews-section{padding:88px 80px;background:var(--navy);border-top:1px solid var(--border);}
 .reviews-inner{max-width:1120px;margin:0 auto;}
 .reviews-header{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-bottom:48px;}
@@ -191,6 +199,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .review-google-text{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;}
 .reviews-cta{display:flex;align-items:center;justify-content:center;margin-top:40px;}
 
+/* FAQ */
 .faq-section{padding:88px 80px;background:var(--black);border-top:1px solid var(--border);}
 .faq-inner{max-width:800px;margin:0 auto;}
 .faq-list{margin-top:48px;display:flex;flex-direction:column;gap:2px;}
@@ -206,6 +215,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .faq-answer-inner{padding:0 28px 24px;font-size:14px;color:var(--muted);line-height:1.8;}
 .faq-item.open .faq-answer{max-height:300px;}
 
+/* FOOTER */
 footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
 .footer-logo-text{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:3px;color:var(--white);}
 .footer-logo-text span{color:var(--blue);}
@@ -214,6 +224,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
 .fade-up{opacity:0;transform:translateY(24px);transition:opacity 0.65s ease,transform 0.65s ease;}
 .fade-up.visible{opacity:1;transform:translateY(0);}
 
+/* MOBILE */
 @media(max-width:900px){
   nav{padding:12px 20px;gap:12px;}
   .nav-logo-text{font-size:18px;letter-spacing:2px;}
@@ -225,7 +236,8 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
   .stat-num{font-size:30px;}
   .stat-label{font-size:8px;white-space:normal;}
   .form-section,.process-section,.warranty-section,.gallery-section,.reviews-section,.faq-section{padding:64px 24px;}
-  .form-inner{grid-template-columns:1fr;gap:40px;}
+  .clients-section{padding:40px 24px;}
+  .clients-inner{padding:36px 24px;}
   .process-steps{grid-template-columns:1fr;}
   .reviews-grid{grid-template-columns:1fr;}
   .video-bottom{padding:24px;}
@@ -237,9 +249,8 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
   .reviews-header{flex-direction:column;align-items:flex-start;}
   .ticker-item img{height:40px;}
   .ticker-item{padding:0 32px;}
-  .guarantee-banner{height:auto;}
-  .guarantee-banner-content{padding:24px 20px;}
-  .guarantee-banner-text p{max-width:100%;}
+  .form-row{grid-template-columns:1fr;}
+  .quote-form{padding:32px 24px;}
 }
 </style>
 </head>
@@ -261,7 +272,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
 <section class="hero" id="hero">
   <div class="hero-video-wrap">
     <video autoplay muted loop playsinline>
-      <source src="/videos/hero-video.mp4" type="video/mp4">
+      <source src="/assets/videos/hero-video.mp4" type="video/mp4">
     </video>
   </div>
   <div class="hero-overlay"></div>
@@ -298,45 +309,45 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
 
 <div class="ticker-wrap">
   <div class="ticker-track">
-    <div class="ticker-item"><img src="/images/brands/bmw.png" alt="BMW"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/bmw.png" alt="BMW"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/mercades.png" alt="Mercedes"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/mercades.png" alt="Mercedes"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/ferrari.png" alt="Ferrari"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/ferrari.png" alt="Ferrari"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/lambo.png" alt="Lamborghini"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/lambo.png" alt="Lamborghini"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/ford.png" alt="Ford"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/ford.png" alt="Ford"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/lexus.png" alt="Lexus"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/lexus.png" alt="Lexus"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/corvette.png" alt="Corvette"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/corvette.png" alt="Corvette"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/chevy.png" alt="Chevrolet"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/chevy.png" alt="Chevrolet"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/jag.png" alt="Jaguar"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/jag.png" alt="Jaguar"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/mclaren.png" alt="McLaren"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/mclaren.png" alt="McLaren"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/bmw.png" alt="BMW"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/bmw.png" alt="BMW"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/mercades.png" alt="Mercedes"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/mercades.png" alt="Mercedes"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/ferrari.png" alt="Ferrari"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/ferrari.png" alt="Ferrari"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/lambo.png" alt="Lamborghini"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/lambo.png" alt="Lamborghini"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/ford.png" alt="Ford"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/ford.png" alt="Ford"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/lexus.png" alt="Lexus"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/lexus.png" alt="Lexus"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/corvette.png" alt="Corvette"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/corvette.png" alt="Corvette"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/chevy.png" alt="Chevrolet"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/chevy.png" alt="Chevrolet"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/jag.png" alt="Jaguar"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/jag.png" alt="Jaguar"></div>
     <span class="ticker-sep">●</span>
-    <div class="ticker-item"><img src="/images/brands/mclaren.png" alt="McLaren"></div>
+    <div class="ticker-item"><img src="/assets/images/brands/mclaren.png" alt="McLaren"></div>
     <span class="ticker-sep">●</span>
   </div>
 </div>
@@ -346,7 +357,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
     <div class="video-top-label">— SEE THE DIFFERENCE</div>
   </div>
   <video id="baVideo" autoplay muted playsinline>
-    <source src="/videos/before.mp4" type="video/mp4">
+    <source src="/assets/videos/before.mp4" type="video/mp4">
   </video>
   <div class="video-overlay"></div>
   <div class="video-bottom">
@@ -358,26 +369,26 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
   </div>
 </section>
 
+<!-- CLIENTS / GUARANTEE SECTION -->
+<section class="clients-section">
+  <div class="clients-bg"></div>
+  <div class="clients-bg-overlay"></div>
+  <div class="clients-inner fade-up">
+    <div class="clients-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    </div>
+    <h3 class="clients-title">SATISFACTION GUARANTEED</h3>
+    <p class="clients-text">If you're not completely satisfied with the results, Tang will make it right — no questions asked. Your investment is protected from day one.</p>
+    <a href="#quote" class="btn-primary" style="margin:0 auto;">
+      Claim Offer Now
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FORM -->
 <section class="form-section" id="quote">
   <div class="form-inner">
-    <div class="form-left fade-up">
-
-      <!-- Guarantee Banner with photo background -->
-      <div class="guarantee-banner">
-        <img src="/assets/images/happy-clients.jpg" alt="Happy Tang Detailing Clients" class="guarantee-bg-img">
-        <div class="guarantee-banner-overlay"></div>
-        <div class="guarantee-banner-content">
-          <div class="guarantee-banner-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <div class="guarantee-banner-text">
-            <strong>SATISFACTION GUARANTEED</strong>
-            <p>If you're not completely satisfied with the results, Tang will make it right — no questions asked. Your investment is protected from day one.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
     <div class="quote-form fade-up">
       <div class="form-title">FILL OUT YOUR INFO TO CLAIM OFFER</div>
       <div class="form-row">
@@ -455,7 +466,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
     <span class="warranty-big"><span class="counter" data-target="6">0</span></span>
     <span class="warranty-unit">Month Warranty Check-In</span>
     <h3 class="warranty-title">WE SCHEDULE A CHECK-IN AT 6 MONTHS</h3>
-    <p class="warranty-text">Six months after your coating, Tang schedules a dedicated check-in appointment to inspect adhesion, gloss retention, and hydrophobic performance. If anything isn't up to standard, it gets addressed — you can come to him or work out a time that fits your schedule.</p>
+    <p class="warranty-text">Six months after your coating, Tang schedules a dedicated check-in appointment to inspect adhesion, gloss retention, and hydrophobic performance. If anything isn't up to standard, it gets addressed.</p>
     <a href="#quote" class="btn-primary" style="margin:0 auto;">
       Claim Offer Now
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -469,9 +480,9 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
     <h2 class="sec-title fade-up">SEE IT FOR <span class="blue">YOURSELF</span></h2>
     <div class="gallery-stage fade-up">
       <div class="gallery-img-wrap">
-        <img class="gallery-img active" src="/images/b.a.1.png" alt="Before and After 1">
-        <img class="gallery-img" src="/images/b.a.2.png" alt="Before and After 2">
-        <img class="gallery-img" src="/images/b.a.3.png" alt="Before and After 3">
+        <img class="gallery-img active" src="/assets/images/b.a.1.png" alt="Before and After 1">
+        <img class="gallery-img" src="/assets/images/b.a.2.png" alt="Before and After 2">
+        <img class="gallery-img" src="/assets/images/b.a.3.png" alt="Before and After 3">
         <div class="gallery-overlay"></div>
       </div>
       <div class="gallery-controls-bar">
@@ -617,9 +628,7 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
 </footer>
 
 <script>
-if(window.location.hash){
-  history.replaceState(null,null,' ');
-}
+if(window.location.hash){history.replaceState(null,null,' ');}
 window.scrollTo(0,0);
 
 function animateCounter(el){
@@ -646,9 +655,8 @@ baVideo.addEventListener('timeupdate',()=>{
 
 baVideo.addEventListener('ended',()=>{
   isAfter=!isAfter;
-  baVideo.src=isAfter?'/videos/after.mp4':'/videos/before.mp4';
-  baVideo.load();
-  baVideo.play();
+  baVideo.src=isAfter?'/assets/videos/after.mp4':'/assets/videos/before.mp4';
+  baVideo.load();baVideo.play();
   videoTag.textContent=isAfter?'AFTER':'BEFORE';
   videoTag.className='video-tag '+(isAfter?'after-tag':'before-tag');
   videoBadge.textContent=isAfter?'Ceramic Coated':'Uncoated Surface';
@@ -663,7 +671,6 @@ document.getElementById('formSubmit').addEventListener('click',function(){
     {id:'vehicleMake',errId:'vehicleMakeError'},
     {id:'vehicleModel',errId:'vehicleModelError'}
   ];
-
   let valid=true;
   fields.forEach(f=>{
     const input=document.getElementById(f.id);
@@ -677,7 +684,6 @@ document.getElementById('formSubmit').addEventListener('click',function(){
       err.classList.remove('show');
     }
   });
-
   if(!valid) return;
 
   const firstName=document.getElementById('firstName').value;
@@ -689,24 +695,18 @@ document.getElementById('formSubmit').addEventListener('click',function(){
   fetch('https://services.leadconnectorhq.com/hooks/ZA7ivyQROFKODWhJoO07/webhook-trigger/cbbe33f9-4d11-4f0b-bb91-52d03a74f387',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({
-      firstName,lastName,phone,
-      vehicleMake:make,
-      vehicleModel:model,
-      source:'Tang Detailing Landing Page'
-    })
+    body:JSON.stringify({firstName,lastName,phone,vehicleMake:make,vehicleModel:model,source:'Tang Detailing Landing Page'})
   }).catch(err=>console.log('Webhook error:',err));
 
   if(typeof fbq!=='undefined') fbq('track','Lead');
-  setTimeout(()=>{ window.location.href='/thank-you'; },300);
+  setTimeout(()=>{window.location.href='/thank-you';},300);
 });
 
 document.querySelectorAll('#firstName,#lastName,#phone,#vehicleMake,#vehicleModel').forEach(input=>{
   input.addEventListener('input',function(){
     if(this.value.trim()){
       this.classList.remove('error');
-      const errId=this.id+'Error';
-      const err=document.getElementById(errId);
+      const err=document.getElementById(this.id+'Error');
       if(err) err.classList.remove('show');
     }
   });
@@ -715,7 +715,6 @@ document.querySelectorAll('#firstName,#lastName,#phone,#vehicleMake,#vehicleMode
 const imgs=document.querySelectorAll('.gallery-img');
 const dots=document.querySelectorAll('.gallery-dot');
 let cur=0;
-
 function goTo(idx){
   imgs[cur].classList.remove('active');
   imgs[cur].style.position='absolute';
@@ -725,7 +724,6 @@ function goTo(idx){
   imgs[cur].style.position='relative';
   dots[cur].classList.add('active');
 }
-
 document.getElementById('nextBtn').addEventListener('click',()=>goTo((cur+1)%imgs.length));
 document.getElementById('prevBtn').addEventListener('click',()=>goTo((cur-1+imgs.length)%imgs.length));
 document.addEventListener('keydown',e=>{
@@ -762,7 +760,6 @@ const obs=new IntersectionObserver((entries)=>{
     }
   });
 },{threshold:0.15});
-
 document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
 
 document.querySelectorAll('.review-card').forEach((card,i)=>{
