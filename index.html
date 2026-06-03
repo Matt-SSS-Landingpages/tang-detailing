@@ -89,8 +89,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .ticker-item img{height:56px;width:auto;background:transparent;}
 .ticker-sep{color:var(--blue);font-size:8px;opacity:0.4;}
 
-.video-section{position:relative;width:100%;background:var(--black);overflow:hidden;}
-.video-section video{width:100%;display:block;height:75vh;object-fit:cover;object-position:center center;}
+/* VIDEO SECTION */
+.video-section{position:relative;width:100%;background:var(--black);overflow:hidden;min-height:400px;}
+.video-section video{width:100%;display:block;height:75vh;object-fit:cover;}
 .video-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,9,10,0.85) 0%,transparent 40%,rgba(8,9,10,0.4) 100%);pointer-events:none;z-index:2;}
 .video-top{position:absolute;top:0;left:0;right:0;z-index:3;padding:40px 80px;}
 .video-top-label{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:4px;text-transform:uppercase;color:#fff;background:rgba(43,123,232,0.2);border:1px solid var(--blue);padding:10px 20px;border-radius:2px;display:inline-block;}
@@ -304,13 +305,19 @@ footer{padding:28px 80px;border-top:1px solid var(--border);display:flex;align-i
   </div>
 </div>
 
+<!-- BEFORE/AFTER VIDEO — two separate video elements, toggled with display -->
 <section class="video-section" id="work">
   <div class="video-top">
     <div class="video-top-label">— SEE THE DIFFERENCE</div>
   </div>
-  <video id="baVideo" muted playsinline>
-    <source id="baVideoSrc" src="/assets/videos/before.mp4" type="video/mp4">
+
+  <video id="beforeVideo" autoplay muted playsinline style="width:100%;display:block;height:75vh;object-fit:cover;">
+    <source src="/assets/videos/before.mp4" type="video/mp4">
   </video>
+  <video id="afterVideo" muted playsinline style="width:100%;display:none;height:75vh;object-fit:cover;">
+    <source src="/assets/videos/after.mp4" type="video/mp4">
+  </video>
+
   <div class="video-overlay"></div>
   <div class="video-bottom">
     <div class="video-tag before-tag" id="videoTag">BEFORE</div>
@@ -511,39 +518,43 @@ function animateCounter(el){
   },16);
 }
 
-// Before/After video with fallback
-const baVideo = document.getElementById('baVideo');
+// TWO VIDEO APPROACH — before and after are separate elements
+const beforeVideo = document.getElementById('beforeVideo');
+const afterVideo = document.getElementById('afterVideo');
 const videoTag = document.getElementById('videoTag');
 const videoBadge = document.getElementById('videoBadge');
 const progressBar = document.getElementById('progressBar');
-let isAfter = false;
-const videos = ['/assets/videos/before.mp4', '/assets/videos/after.mp4'];
 
-function playVideo(src, label, badge, tagClass) {
-  baVideo.src = src;
-  baVideo.load();
-  baVideo.play().catch(() => {});
-  videoTag.textContent = label;
-  videoTag.className = 'video-tag ' + tagClass;
-  videoBadge.textContent = badge;
-  progressBar.style.width = '0%';
+function updateProgress(vid) {
+  if(vid.duration) progressBar.style.width = (vid.currentTime / vid.duration * 100) + '%';
 }
 
-baVideo.addEventListener('timeupdate', () => {
-  if(baVideo.duration) progressBar.style.width = (baVideo.currentTime / baVideo.duration * 100) + '%';
-});
-baVideo.addEventListener('ended', () => {
-  isAfter = !isAfter;
-  if(isAfter) {
-    playVideo('/assets/videos/after.mp4', 'AFTER', 'Ceramic Coated', 'after-tag');
-  } else {
-    playVideo('/assets/videos/before.mp4', 'BEFORE', 'Uncoated Surface', 'before-tag');
-  }
-});
-baVideo.play().catch(() => {});
+beforeVideo.addEventListener('timeupdate', () => updateProgress(beforeVideo));
+afterVideo.addEventListener('timeupdate', () => updateProgress(afterVideo));
 
-baVideo.play().catch(() => {});
+beforeVideo.addEventListener('ended', () => {
+  beforeVideo.style.display = 'none';
+  afterVideo.style.display = 'block';
+  videoTag.textContent = 'AFTER';
+  videoTag.className = 'video-tag after-tag';
+  videoBadge.textContent = 'Ceramic Coated';
+  progressBar.style.width = '0%';
+  afterVideo.currentTime = 0;
+  afterVideo.play().catch(()=>{});
+});
 
+afterVideo.addEventListener('ended', () => {
+  afterVideo.style.display = 'none';
+  beforeVideo.style.display = 'block';
+  videoTag.textContent = 'BEFORE';
+  videoTag.className = 'video-tag before-tag';
+  videoBadge.textContent = 'Uncoated Surface';
+  progressBar.style.width = '0%';
+  beforeVideo.currentTime = 0;
+  beforeVideo.play().catch(()=>{});
+});
+
+// Form submission
 document.getElementById('formSubmit').addEventListener('click',function(){
   const fields=[
     {id:'firstName',errId:'firstNameError'},
