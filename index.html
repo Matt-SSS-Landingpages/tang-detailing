@@ -529,7 +529,6 @@ function playVideo(src, label, badge, tagClass) {
   progressBar.style.width = '0%';
 }
 
-baVideo.addEventListener('canplay', () => { baVideo.play().catch(() => {}); });
 baVideo.addEventListener('timeupdate', () => {
   if(baVideo.duration) progressBar.style.width = (baVideo.currentTime / baVideo.duration * 100) + '%';
 });
@@ -541,6 +540,7 @@ baVideo.addEventListener('ended', () => {
     playVideo('/assets/videos/before.mp4', 'BEFORE', 'Uncoated Surface', 'before-tag');
   }
 });
+baVideo.play().catch(() => {});
 
 baVideo.play().catch(() => {});
 
