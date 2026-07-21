@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local agent/tooling files
+.claude/
+.agents/
+skills-lock.json

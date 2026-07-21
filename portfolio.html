@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detailing Portfolio in Raleigh NC | Tang Detailing</title>
+<meta name="description" content="See our mobile detailing portfolio in Raleigh, NC. Real ceramic coating, paint correction and full-detail transformations — click any project to see the car and the service performed.">
+<link rel="canonical" href="https://tangdetailing.com/portfolio.html">
+<meta name="robots" content="index,follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Our Detailing Portfolio — Tang Detailing, Raleigh NC">
+<meta property="og:description" content="Discover our work. Real ceramic coating, paint correction and detailing transformations from across the Raleigh Triangle.">
+<meta property="og:url" content="https://tangdetailing.com/portfolio.html">
+<meta property="og:image" content="https://tangdetailing.com/assets/images/background.1.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Our Detailing Portfolio — Tang Detailing, Raleigh NC">
+<meta name="twitter:description" content="Discover our work. Ceramic coating, paint correction and detailing transformations across the Raleigh Triangle.">
+<meta name="twitter:image" content="https://tangdetailing.com/assets/images/background.1.jpg">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<!-- ===== Breadcrumb Schema ===== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://tangdetailing.com/"},
+    {"@type":"ListItem","position":2,"name":"Portfolio","item":"https://tangdetailing.com/portfolio.html"}
+  ]
+}
+</script>
+
+<style>
+/* ===================== PORTFOLIO PAGE ===================== */
+
+/* ---- Hero ---- */
+.pf-hero{position:relative;background:var(--black);color:#fff;padding:calc(var(--nav-h) + clamp(64px,9vw,104px)) 0 clamp(56px,8vw,90px);overflow:hidden;text-align:center;}
+.pf-hero-bg{position:absolute;inset:0;z-index:0;}
+.pf-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;}
+.pf-hero-bg::after{content:'';position:absolute;inset:0;background:
+    linear-gradient(180deg,rgba(9,9,11,0.86) 0%,rgba(9,9,11,0.72) 45%,rgba(9,9,11,0.90) 100%);}
+.pf-hero::before{content:'';position:absolute;inset:0;z-index:1;background:radial-gradient(120% 90% at 50% 0%,rgba(37,99,235,0.22),transparent 58%);pointer-events:none;}
+.pf-hero::after{content:'';position:absolute;left:0;right:0;bottom:0;z-index:2;height:1px;background:linear-gradient(90deg,transparent,var(--blue),transparent);opacity:0.5;}
+.pf-hero .wrap{position:relative;z-index:3;max-width:760px;}
+.pf-hero-h1{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(44px,7vw,86px);line-height:0.96;letter-spacing:0.006em;text-transform:uppercase;margin:0 0 18px;text-shadow:0 2px 30px rgba(0,0,0,0.4);}
+.pf-hero-h1 em{font-style:normal;color:var(--blue);}
+.pf-hero-sub{font-size:clamp(15px,1.5vw,18px);color:rgba(255,255,255,0.78);font-weight:300;max-width:560px;line-height:1.7;margin:0 auto;}
+
+/* ---- Guided service selector ---- */
+.pf-choose{margin-top:38px;}
+.pf-choose-label{font-family:'Inter',sans-serif;font-size:clamp(14px,1.5vw,16px);font-weight:600;letter-spacing:0.01em;color:#fff;margin-bottom:6px;}
+.pf-choose-arrows{display:flex;justify-content:center;gap:6px;margin-bottom:14px;}
+.pf-choose-arrows svg{width:22px;height:22px;color:var(--blue);animation:pf-bounce 1.4s ease-in-out infinite;}
+.pf-choose-arrows svg:nth-child(2){animation-delay:.15s;}
+.pf-choose-arrows svg:nth-child(3){animation-delay:.30s;}
+@keyframes pf-bounce{0%,100%{transform:translateY(0);opacity:.5;}50%{transform:translateY(7px);opacity:1;}}
+
+/* ---- Filter bar ---- */
+.pf-filters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;}
+.pf-filter{font-family:'Inter',sans-serif;font-size:14.5px;font-weight:600;letter-spacing:0.01em;color:#fff;background:rgba(255,255,255,0.08);border:1.5px solid rgba(255,255,255,0.22);border-radius:999px;padding:11px 24px;cursor:pointer;transition:transform .18s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease;}
+.pf-filter:hover{transform:translateY(-2px);background:rgba(255,255,255,0.14);border-color:rgba(255,255,255,0.5);}
+.pf-filter.active{color:#fff;background:var(--blue);border-color:var(--blue);box-shadow:0 8px 22px rgba(37,99,235,0.45);}
+
+/* ---- Grid (white + grainy, edgy cards) ---- */
+.pf-section{position:relative;overflow:hidden;background:linear-gradient(180deg,#16161a 0%,#0a0a0c 100%);padding:clamp(48px,6vw,84px) 0;}
+.pf-section::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0.32;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px 200px;}
+.pf-section::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(100% 60% at 50% 0%,rgba(37,99,235,0.12),transparent 60%);}
+.pf-section .wrap{position:relative;z-index:1;}
+.pf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.pf-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid rgba(9,9,11,0.16);border-radius:12px;overflow:hidden;text-decoration:none;box-shadow:0 16px 38px -22px rgba(9,9,11,0.5);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;}
+.pf-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;z-index:3;background:linear-gradient(90deg,var(--blue),#6d9bff);transform:scaleX(0);transform-origin:left;transition:transform .35s ease;}
+.pf-card:hover{transform:translateY(-6px);border-color:var(--blue-border);box-shadow:0 32px 62px -24px rgba(9,9,11,0.6);}
+.pf-card:hover::after{transform:scaleX(1);}
+.pf-card-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:#0b0b0f;}
+.pf-card-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+.pf-card:hover .pf-card-media img{transform:scale(1.06);}
+.pf-card-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(9,9,11,0.72) 100%);}
+.pf-card-body{position:relative;padding:22px 22px 24px;display:flex;flex-direction:column;flex:1;background:#fff;}
+.pf-card-body::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:0.85;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:150px 150px;}
+.pf-veh{font-family:'DM Mono','Inter',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue-dark);margin-bottom:8px;}
+.pf-card-title{font-family:'Anton',sans-serif;font-weight:400;font-size:20px;line-height:1.12;letter-spacing:0.01em;text-transform:uppercase;color:var(--ink);margin-bottom:auto;}
+.pf-view{display:inline-flex;align-items:center;gap:7px;margin-top:18px;font-size:13.5px;font-weight:600;letter-spacing:0.02em;color:var(--ink);}
+.pf-view svg{width:16px;height:16px;transition:transform .25s ease;}
+.pf-card:hover .pf-view svg{transform:translateX(4px);}
+.pf-card:hover .pf-view{color:var(--blue);}
+
+.pf-card.is-hidden{display:none;}
+
+/* ---- Final CTA (shared pattern) ---- */
+.contact-section{background:var(--black);color:#fff;position:relative;overflow:hidden;}
+.contact-section::before{content:'';position:absolute;top:-30%;right:-10%;width:720px;height:720px;background:radial-gradient(circle,rgba(37,99,235,0.20),transparent 62%);z-index:0;pointer-events:none;}
+.contact-section .wrap{position:relative;z-index:1;}
+.contact-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:52px;align-items:start;}
+.contact-info .section-title{color:#fff;}
+.contact-info .section-lead{color:rgba(255,255,255,0.64);}
+.contact-points{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-direction:column;gap:16px;}
+.contact-points li{display:flex;align-items:center;gap:13px;font-size:15px;color:rgba(255,255,255,0.86);}
+.contact-points svg{width:20px;height:20px;color:var(--blue);flex-shrink:0;}
+.contact-points a{color:#fff;}
+.contact-points a:hover{color:var(--blue);}
+.contact-embed{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:18px;padding:30px;}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:34px;}}
+
+@media(max-width:940px){
+  .pf-grid{grid-template-columns:repeat(2,1fr);gap:20px;}
+}
+@media(max-width:600px){
+  .pf-grid{grid-template-columns:1fr;gap:18px;}
+  .pf-card-title{font-size:19px;}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/index.html" class="nav-brand">
+    <img src="/assets/images/brand-logo.avif" alt="Tang Detailing" class="nav-logo" width="284" height="182">
+  </a>
+  <div class="nav-links">
+    <div class="nav-dd">
+      <span class="nav-dd-toggle">Services
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+      <div class="nav-dd-menu">        <a href="/full-detail-raleigh.html">Full Detailing</a>
+        <a href="/exterior-detailing-raleigh.html">Exterior Detailing</a>
+        <a href="/interior-detailing-raleigh.html">Interior Detailing</a>
+        <a href="/ceramic-coating-raleigh.html">Ceramic Coating</a>
+        <a href="/car-detailing-membership-raleigh.html">Maintenance Membership</a>
+      </div>
+    </div>
+    <a href="/portfolio.html">Portfolio</a>
+    <a href="/blog/index.html">Blog</a>
+    <div class="nav-dd">
+      <span class="nav-dd-toggle">Locations
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+      <div class="nav-dd-menu">
+        <a href="/mobile-detailing-raleigh.html">Raleigh</a>
+        <a href="/mobile-detailing-cary.html">Cary</a>
+        <a href="/mobile-detailing-durham.html">Durham</a>
+        <a href="/mobile-detailing-wake-forest.html">Wake Forest</a>
+        <a href="/mobile-detailing-apex.html">Apex</a>
+        <a href="/mobile-detailing-chapel-hill.html">Chapel Hill</a>
+      </div>
+    </div>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:+19196706062" class="btn btn-primary nav-call">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.6a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg>
+      <span>(919) 670-6062</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <div class="mm-group">
+    <button type="button" class="mm-acc">Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="mm-panel">
+      <a href="/full-detail-raleigh.html">Full Detailing</a>
+      <a href="/exterior-detailing-raleigh.html">Exterior Detailing</a>
+      <a href="/interior-detailing-raleigh.html">Interior Detailing</a>
+      <a href="/ceramic-coating-raleigh.html">Ceramic Coating</a>
+      <a href="/car-detailing-membership-raleigh.html">Maintenance Membership</a>
+    </div>
+  </div>
+  <a href="/portfolio.html">Portfolio</a>
+  <a href="/blog/index.html">Blog</a>
+  <div class="mm-group">
+    <button type="button" class="mm-acc">Locations <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="mm-panel">
+      <a href="/mobile-detailing-raleigh.html">Raleigh</a>
+      <a href="/mobile-detailing-cary.html">Cary</a>
+      <a href="/mobile-detailing-durham.html">Durham</a>
+      <a href="/mobile-detailing-wake-forest.html">Wake Forest</a>
+      <a href="/mobile-detailing-apex.html">Apex</a>
+      <a href="/mobile-detailing-chapel-hill.html">Chapel Hill</a>
+    </div>
+  </div>
+  <a href="/about.html">About</a>
+  <a href="/contact.html">Contact</a>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<header class="pf-hero">
+  <div class="pf-hero-bg">
+    <img src="/assets/images/pricing-van-bw.jpg" alt="Tang Detailing at work in Raleigh NC" width="2048" height="1365" fetchpriority="high">
+  </div>
+  <div class="wrap">
+    <h1 class="pf-hero-h1">Discover <em>our work</em></h1>
+    <p class="pf-hero-sub">A look at real vehicles we've transformed across the Raleigh Triangle — from multi-year ceramic coatings to swirl-free paint corrections and full details. Click any project to see the car and exactly what we did.</p>
+
+    <div class="pf-choose">
+      <p class="pf-choose-label">Choose a service to see our work</p>
+      <div class="pf-choose-arrows" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="pf-filters" role="tablist" aria-label="Filter projects by service">
+        <button class="pf-filter active" data-filter="all">All Work</button>
+        <button class="pf-filter" data-filter="ceramic">Ceramic Coating</button>
+        <button class="pf-filter" data-filter="correction">Paint Correction</button>
+        <button class="pf-filter" data-filter="detail">Detailing</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== GRID ===================== -->
+<section class="pf-section">
+  <div class="wrap">
+    <div class="pf-grid" id="pf-grid">
+
+      <a class="pf-card reveal" data-cat="ceramic" href="/portfolio/bmw-m340i-paint-polish-ceramic-coating-in-raleigh.html">
+        <div class="pf-card-media">
+          <img src="/assets/images/ceramic-after.jpg" alt="BMW M340i with a fresh paint polish and ceramic coating in Raleigh NC" loading="lazy">
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-veh">BMW M340i</div>
+          <h2 class="pf-card-title">Paint Polish &amp; Ceramic Coating</h2>
+          <span class="pf-view">View project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="pf-card reveal d1" data-cat="ceramic" href="/portfolio/chevrolet-silverado-ceramic-coating-in-raleigh.html">
+        <div class="pf-card-media">
+          <img src="/assets/images/ceramic-truck.jpg" alt="White Chevrolet Silverado after a ceramic coating by Tang Detailing in Raleigh NC" loading="lazy">
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-veh">Chevrolet Silverado</div>
+          <h2 class="pf-card-title">Full Truck Ceramic Coating</h2>
+          <span class="pf-view">View project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="pf-card reveal d2" data-cat="correction" href="/portfolio/paint-correction-swirl-removal-in-raleigh.html">
+        <div class="pf-card-media">
+          <picture>
+            <source srcset="/assets/images/b.a.1.webp" type="image/webp">
+            <img src="/assets/images/b.a.1.png" alt="Swirl and scratch removal paint correction in Raleigh NC" loading="lazy">
+          </picture>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-veh">Daily Driver</div>
+          <h2 class="pf-card-title">Swirl &amp; Scratch Removal</h2>
+          <span class="pf-view">View project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="pf-card reveal" data-cat="correction" href="/portfolio/gloss-enhancement-polish-in-raleigh.html">
+        <div class="pf-card-media">
+          <picture>
+            <source srcset="/assets/images/b.a.3.webp" type="image/webp">
+            <img src="/assets/images/b.a.3.png" alt="Gloss enhancement machine polish transformation in Raleigh NC" loading="lazy">
+          </picture>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-veh">Sedan</div>
+          <h2 class="pf-card-title">Gloss Enhancement Polish</h2>
+          <span class="pf-view">View project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="pf-card reveal d1" data-cat="detail" href="/portfolio/full-interior-exterior-detail-in-raleigh.html">
+        <div class="pf-card-media">
+          <picture>
+            <source srcset="/assets/images/b.a.2.webp" type="image/webp">
+            <img src="/assets/images/b.a.2.png" alt="Full interior and exterior detail transformation in Raleigh NC" loading="lazy">
+          </picture>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-veh">Family SUV</div>
+          <h2 class="pf-card-title">Full Interior &amp; Exterior Detail</h2>
+          <span class="pf-view">View project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="pf-card reveal d2" data-cat="detail" href="/portfolio/wheel-and-exterior-detail-in-raleigh.html">
+        <div class="pf-card-media">
+          <picture>
+            <source srcset="/assets/images/wheel.detail.hero.webp" type="image/webp">
+            <img src="/assets/images/wheel.detail.hero.jpg" alt="Deep wheel and exterior detail in Raleigh NC" loading="lazy">
+          </picture>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-veh">Performance Coupe</div>
+          <h2 class="pf-card-title">Wheel &amp; Exterior Detail</h2>
+          <span class="pf-view">View project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA (contact form) ===================== -->
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h2 class="section-title">Get your <em>free quote</em></h2>
+        <p class="section-lead">Tell us about your vehicle and what you're after. We'll get back to you with a personalized quote — usually the same day.</p>
+        <ul class="contact-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8.1 9.8a16 16 0 006 6l1.3-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg> <a href="tel:+19196706062">(919) 670-6062</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg> <a href="mailto:tangdetailing@gmail.com">tangdetailing@gmail.com</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> Mobile service across Raleigh &amp; the Triangle</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg> Open 6 days a week</li>
+        </ul>
+      </div>
+      <div class="contact-form contact-embed reveal d1">
+        <iframe src="https://links.revvedpro.com/widget/form/jAwmx42KGvGcYvzbFVjy"
+          style="width:100%;min-height:720px;border:none;border-radius:14px;"
+          id="inline-jAwmx42KGvGcYvzbFVjy"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-activation-type="alwaysActivated"
+          data-deactivation-type="neverDeactivate"
+          data-form-name="Tang Detailing Quote Form"
+          data-height="720"
+          data-layout-iframe-id="inline-jAwmx42KGvGcYvzbFVjy"
+          data-form-id="jAwmx42KGvGcYvzbFVjy"
+          title="Tang Detailing Quote Form"></iframe>
+        <script src="https://links.revvedpro.com/js/form_embed.js"></script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/images/brand-logo.avif" alt="Tang Detailing — A Detail Above" class="footer-logo" width="284" height="182" loading="lazy">
+        <p>Premium mobile auto detailing, ceramic coating and paint correction serving Raleigh and the greater Triangle, NC.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <a href="/mobile-detailing-raleigh.html">Raleigh</a>
+        <a href="/mobile-detailing-cary.html">Cary</a>
+        <a href="/mobile-detailing-durham.html">Durham</a>
+        <a href="/mobile-detailing-wake-forest.html">Wake Forest</a>
+        <a href="/mobile-detailing-apex.html">Apex</a>
+        <a href="/mobile-detailing-chapel-hill.html">Chapel Hill</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/full-detail-raleigh.html">Full Detailing</a>
+        <a href="/exterior-detailing-raleigh.html">Exterior Detailing</a>
+        <a href="/interior-detailing-raleigh.html">Interior Detailing</a>
+        <a href="/ceramic-coating-raleigh.html">Ceramic Coating</a>
+        <a href="/car-detailing-membership-raleigh.html">Maintenance Membership</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/contact.html">Contact</a>
+        <a href="tel:+19196706062">(919) 670-6062</a>
+        <a href="mailto:tangdetailing@gmail.com">tangdetailing@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2025</span> Tang Detailing · Raleigh, NC · All rights reserved.</p>
+      <div class="footer-badges">
+        <span class="footer-badge">Fully Insured</span>
+        <span class="footer-badge">Certified Installer</span>
+        <span class="footer-badge">Satisfaction Guarantee</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== FLOATING CTA ===================== -->
+<a href="/contact.html#contact" class="floating-cta">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+  Get Quote
+</a>
+
+<script src="/js/main.js"></script>
+<script>
+/* Portfolio service filter */
+(function(){
+  var filters=document.querySelectorAll('.pf-filter'),
+      cards=document.querySelectorAll('#pf-grid .pf-card');
+  if(!filters.length) return;
+  filters.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var f=btn.getAttribute('data-filter');
+      filters.forEach(function(b){b.classList.toggle('active',b===btn);});
+      cards.forEach(function(c){
+        var show=(f==='all'||c.getAttribute('data-cat')===f);
+        c.classList.toggle('is-hidden',!show);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Cloudflare Pages redirects — https://developers.cloudflare.com/pages/configuration/redirects/
+# Format:  <from>  <to>  <status>
+# Keep old/marketing URLs alive with permanent 301s so link equity is preserved.
+
+# ---- Confirmed 301s ----
+/mobile-detailing-raleigh.html   /                           301
+/paint-correction      /paint-correction-raleigh.html        301
+/ceramic-coating       /ceramic-coating-raleigh.html         301
+/car-detailing         /services.html                        301
+/vehicle-maintenance   /car-detailing-membership-raleigh.html 301
+/bookingonline         /contact.html                         301
+
+# ---- Placeholders: uncomment and adjust as these pages/URLs go live ----
+# /membership          /car-detailing-membership-raleigh.html 301
+# /detailing-raleigh   /                                      301
+# /quote               /contact.html                          301
+# /instagram           https://www.instagram.com/tangdetailing/ 302

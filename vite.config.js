@@ -7,7 +7,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        thankyou: 'thank-you.html'
+        thankyou: 'thank-you.html',
+        membership: 'car-detailing-membership-raleigh.html'
       }
     }
   }

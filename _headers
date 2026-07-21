@@ -1,0 +1,16 @@
+# Cloudflare Pages headers — https://developers.cloudflare.com/pages/configuration/headers/
+# Format:  a path pattern on its own line, followed by indented "Header: value" lines.
+
+# Keep preview deployments out of Google's index.
+# Cloudflare Pages serves every build at <hash>.<project>.pages.dev; this rule
+# tags ONLY those preview hosts with noindex. Your production custom domain
+# (tangdetailing.com) is NOT a *.pages.dev host, so it is unaffected and stays
+# fully indexable. Verify after deploy: production response should NOT carry
+# this header (curl -sI https://tangdetailing.com | grep -i x-robots-tag → empty).
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+# Long-cache immutable static assets (safe: filenames change when content does,
+# and photos here are versioned by path).
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
