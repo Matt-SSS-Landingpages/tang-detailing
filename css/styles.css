@@ -151,7 +151,8 @@ section{padding:clamp(64px,9vw,120px) 0;}
 .nav-links a.active{color:var(--ink);}
 .nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--blue);}
 .nav-right{display:flex;align-items:center;gap:20px;}
-.nav-call{white-space:nowrap;}
+.nav-call{white-space:nowrap;font-size:15px;padding:15px 26px;letter-spacing:0.04em;}
+.nav-call svg{width:18px;height:18px;}
 
 /* Dropdown — reads as the header extending downward */
 .nav-dd{position:relative;display:flex;align-items:center;height:var(--nav-h);}
@@ -246,6 +247,10 @@ section{padding:clamp(64px,9vw,120px) 0;}
 .footer-bottom p{font-size:12px;color:var(--muted-2);letter-spacing:0.02em;}
 .footer-badges{display:flex;gap:8px;flex-wrap:wrap;}
 .footer-badge{font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--border);border-radius:100px;padding:5px 12px;}
+.footer-social{display:flex;gap:12px;margin-top:22px;}
+.footer-social a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--border);border-radius:11px;color:var(--muted);transition:color .18s,border-color .18s,background .18s,transform .18s;}
+.footer-social a:hover{color:#fff;border-color:var(--blue);background:rgba(37,99,235,0.14);transform:translateY(-2px);}
+.footer-social svg{width:21px;height:21px;}
 
 /* ---------- Scroll reveal ---------- */
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1);}
