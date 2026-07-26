@@ -46,11 +46,11 @@
 .hero-inner{position:relative;z-index:2;width:100%;}
 .hero-content{position:relative;max-width:600px;}
 .hero-content::before{content:'';position:absolute;left:-48px;top:-70px;width:660px;height:560px;background:radial-gradient(closest-side,rgba(9,9,11,0.6),rgba(9,9,11,0) 70%);filter:blur(10px);z-index:-1;pointer-events:none;}
-.hero-badge{display:inline-flex;align-items:center;gap:12px;background:var(--white);border:1px solid var(--border-dark);border-radius:100px;padding:8px 8px 8px 16px;margin-bottom:28px;box-shadow:0 16px 40px rgba(0,0,0,0.28);}
+.hero-badge{display:inline-flex;align-items:center;gap:12px;background:rgba(9,9,11,0.32);backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);border:1px solid rgba(255,255,255,0.22);border-radius:100px;padding:8px 8px 8px 16px;margin-bottom:28px;box-shadow:0 10px 34px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.22);}
 .hero-badge .stars{transform:translateY(1px);}
-.hero-badge .rating{font-size:13px;font-weight:600;color:var(--ink);}
-.hero-badge .g{display:inline-flex;align-items:center;gap:6px;background:var(--light);border-radius:100px;padding:4px 12px;font-size:11px;color:var(--ink-soft);letter-spacing:0.02em;}
-.hero-badge .g b{color:var(--ink);font-weight:600;}
+.hero-badge .rating{font-size:13px;font-weight:700;color:#fff;}
+.hero-badge .g{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.12);border-radius:100px;padding:4px 12px;font-size:11px;color:rgba(255,255,255,0.9);letter-spacing:0.02em;}
+.hero-badge .g b{color:#fff;font-weight:700;}
 .hero h1{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(46px,6.6vw,86px);line-height:0.98;letter-spacing:0.006em;text-transform:uppercase;margin-bottom:22px;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,0.75),0 16px 40px rgba(0,0,0,0.55);}
 .hero h1 em{font-style:normal;color:var(--blue);}
 .hero-tag{font-family:'Inter',sans-serif;font-style:normal;font-weight:400;font-size:clamp(19px,2.2vw,26px);color:#fff;margin-bottom:16px;text-shadow:0 1px 4px rgba(0,0,0,0.7),0 10px 26px rgba(0,0,0,0.45);}
