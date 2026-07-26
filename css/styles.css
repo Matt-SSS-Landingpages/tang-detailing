@@ -154,7 +154,7 @@ section{padding:clamp(64px,9vw,120px) 0;}
 .nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--blue);}
 .nav-right{display:flex;align-items:center;gap:20px;justify-self:end;}
 .nav-call{white-space:nowrap;font-size:12.5px;gap:11px;padding:8px 18px 8px 9px;letter-spacing:0.05em;border-radius:11px;color:#fff;background:linear-gradient(135deg,#1a1a1d,#0a0a0c);border:1px solid rgba(255,255,255,0.1);box-shadow:0 6px 20px rgba(9,9,11,0.3);}
-.nav-call svg{width:30px;height:30px;padding:6px;border-radius:8px;background:var(--gold);color:#0a0a0b;box-shadow:0 3px 10px rgba(245,179,1,0.35);}
+.nav-call svg{width:30px;height:30px;padding:6px;border-radius:8px;color:#fff;background-color:var(--blue);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:90px 90px;background-blend-mode:overlay;box-shadow:0 3px 10px rgba(37,99,235,0.4);}
 .nav-call:hover{transform:translateY(-1px);background:linear-gradient(135deg,#212124,#0d0d0f);box-shadow:0 10px 26px rgba(9,9,11,0.42);}
 
 /* Dropdown — reads as the header extending downward */
