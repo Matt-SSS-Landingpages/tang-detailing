@@ -288,6 +288,7 @@ section{padding:clamp(64px,9vw,120px) 0;}
   .nav-links a{font-size:14.5px;}
 }
 @media(max-width:920px){
+  .nav{display:flex;justify-content:space-between;}
   .nav-links{display:none;}
   .nav-toggle{display:flex;}
   .footer-grid{grid-template-columns:1fr 1fr;gap:36px;}
