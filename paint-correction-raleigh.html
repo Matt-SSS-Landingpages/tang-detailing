@@ -185,7 +185,7 @@
   background:linear-gradient(180deg,transparent,rgba(9,9,11,0.82));color:#fff;font-size:13px;font-weight:500;letter-spacing:0.03em;}
 .cc-intro-media figcaption svg{width:17px;height:17px;stroke:#8fb4ff;fill:none;flex-shrink:0;}
 /* ---- Before / after slider (intro) ---- */
-.cc-ba{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--border-dark);box-shadow:0 30px 70px rgba(24,24,27,0.22);aspect-ratio:4/3;cursor:ew-resize;-webkit-user-select:none;user-select:none;touch-action:pan-y;background:#0c1220;}
+.cc-ba{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--border-dark);box-shadow:0 30px 70px rgba(24,24,27,0.22);aspect-ratio:3/4;cursor:ew-resize;-webkit-user-select:none;user-select:none;touch-action:pan-y;background:#0c1220;}
 .cc-ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;}
 .cc-ba .ba-after{clip-path:inset(0 0 0 50%);}
 .ba-handle{position:absolute;top:0;bottom:0;left:50%;width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 14px rgba(0,0,0,0.45);z-index:3;pointer-events:none;}
@@ -211,7 +211,7 @@
 .cc-benefits .section-title,.cc-benefits .m-head p{color:#fff;}
 .cc-why{display:grid;grid-template-columns:0.82fr 1.18fr;gap:44px;align-items:stretch;margin-top:52px;}
 .cc-why-media{position:relative;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);box-shadow:0 30px 70px rgba(0,0,0,0.5);}
-.cc-why-media img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:3/4;transition:transform 1.2s cubic-bezier(.2,.6,.2,1);}
+.cc-why-media img,.cc-why-media video{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:3/4;transition:transform 1.2s cubic-bezier(.2,.6,.2,1);}
 .cc-why-media:hover img{transform:scale(1.04);}
 .cc-why-media figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:20px 22px;display:flex;align-items:center;gap:10px;background:linear-gradient(180deg,transparent,rgba(9,9,11,0.85));color:#fff;font-size:13px;font-weight:500;letter-spacing:0.03em;}
 .cc-why-media figcaption svg{width:17px;height:17px;stroke:#8fb4ff;fill:none;flex-shrink:0;}
@@ -595,26 +595,30 @@
   <div class="wrap">
     <div class="cc-intro-grid">
       <div class="reveal">
-        <h2 class="section-title">Not a cover-up. A <em>true restoration.</em></h2>
-        <p class="section-lead">A wax or glaze temporarily hides swirl marks. Paint correction is different — we carefully machine-polish the clear coat to physically remove defects, so the gloss you see is the paint itself at its absolute best.</p>
+        <h2 class="section-title">What is <em>paint correction?</em></h2>
+        <p class="section-lead">Paint correction is a multi-stage machine-polishing process that permanently removes defects from your clear coat — swirl marks, scratches, water spots and oxidation — to restore the paint's true depth, clarity and gloss. It's the paint itself at its best, not a wax hiding the flaws.</p>
         <ul class="cc-check-list">
           <li>
             <svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-            <div><b>Removes defects permanently</b><span>Swirls, buffer trails, water spots and oxidation are polished out — not filled in.</span></div>
+            <div><b>A machine-polishing process</b><span>Professional pads and compounds gently level the clear coat to remove defects — they're never filled in or masked over.</span></div>
           </li>
           <li>
             <svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-            <div><b>Restores depth &amp; clarity</b><span>Leveling the paint brings back reflections, richness and a true wet look.</span></div>
+            <div><b>Multi-stage &amp; measured</b><span>We measure paint thickness and tailor each step — compounding to cut defects, then refining to bring out maximum gloss.</span></div>
           </li>
           <li>
             <svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-            <div><b>The perfect base for coating</b><span>Correction is the ideal first step before a <a class="klink" href="/ceramic-coating-raleigh.html">ceramic coating</a> locks the finish in.</span></div>
+            <div><b>Permanent defect removal</b><span>Swirls, buffer trails, water spots and oxidation are physically polished out for good, not temporarily covered.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><b>The ideal base for a coating</b><span>Correcting first means a <a class="klink" href="/ceramic-coating-raleigh.html">ceramic coating</a> locks in a flawless finish.</span></div>
           </li>
         </ul>
       </div>
       <figure class="cc-ba reveal d1" data-ba aria-label="Drag to compare paint before and after paint correction">
-        <img class="ba-before" src="/assets/images/ceramic-before.png" alt="Car paint before paint correction — dull, swirled and hazy" width="1600" height="1200" loading="lazy">
-        <img class="ba-after" src="/assets/images/ceramic-after.jpg" alt="Car paint after paint correction — deep, glossy, defect-free finish" width="1600" height="1200" loading="lazy">
+        <img class="ba-before" src="/assets/images/paint-correction-before.png" alt="Car paint before paint correction — swirled, dull and hazy" width="1086" height="1448" loading="lazy">
+        <img class="ba-after" src="/assets/images/paint-correction-after.jpg" alt="Car paint after paint correction — deep, glossy, defect-free finish" width="1170" height="1560" loading="lazy">
         <span class="ba-tag ba-tag--before">Before</span>
         <span class="ba-tag ba-tag--after">After</span>
         <div class="ba-handle" aria-hidden="true">
@@ -629,38 +633,38 @@
 <section class="cc-benefits">
   <div class="wrap">
     <div class="m-head center reveal">
-      <h2 class="section-title">Say goodbye to <em>tired paint</em></h2>
-      <p style="color:rgba(255,255,255,0.66);">If your paint looks hazy in the sun or covered in fine spider-web scratches, correction is the answer. Here's what we remove.</p>
+      <h2 class="section-title">Why you should get <em>paint correction</em></h2>
+      <p style="color:rgba(255,255,255,0.66);">It's more than looks. Correction restores your paint to its best possible condition, protects what your car is worth and sets the foundation for lasting protection.</p>
     </div>
     <div class="cc-why">
       <figure class="cc-why-media reveal">
-        <img src="/assets/images/ceramic-coating.jpg" alt="Vehicle paint restored with professional paint correction by Tang Detailing in Raleigh NC" width="1500" height="2000" loading="lazy">
+        <video src="/assets/images/paint-correction-video.mp4" autoplay muted loop playsinline aria-label="Tang Detailing machine-polishing a car during paint correction in Raleigh NC"></video>
       </figure>
       <div class="cc-why-scroller">
       <ul class="cc-why-list">
         <li class="cc-why-item reveal">
-          <span class="cc-why-ico"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M12 2s6 7 6 12a6 6 0 01-12 0c0-5 6-12 6-12z"/></svg></span>
-          <div><b>Swirl Marks &amp; Spider-Webbing</b><p>The fine circular scratches from automatic car washes and improper drying that dull your paint in direct sunlight.</p></div>
-        </li>
-        <li class="cc-why-item reveal d1">
-          <span class="cc-why-ico"><svg viewBox="0 0 24 24" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span>
-          <div><b>Light Scratches</b><p>Surface scratches and scuffs that haven't gone through the clear coat can be leveled and polished away.</p></div>
-        </li>
-        <li class="cc-why-item reveal">
-          <span class="cc-why-ico"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/></svg></span>
-          <div><b>Water Spots &amp; Etching</b><p>Mineral deposits and hard-water etching that leave rings and blotches baked into the finish.</p></div>
-        </li>
-        <li class="cc-why-item reveal d1">
           <span class="cc-why-ico"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M12 2l2.4 6.9L21 9.3l-5.2 4.4 1.7 6.8L12 16.9l-5.5 3.6 1.7-6.8L3 9.3l6.6-.4z"/></svg></span>
-          <div><b>Oxidation &amp; Dullness</b><p>Sun-faded, chalky and hazy paint restored to rich, saturated color and clarity.</p></div>
-        </li>
-        <li class="cc-why-item reveal">
-          <span class="cc-why-ico"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M9 2h6M10 2v5l-4 9a3 3 0 003 4h6a3 3 0 003-4l-4-9V2"/><path d="M7 15h10"/></svg></span>
-          <div><b>Buffer Trails &amp; Holograms</b><p>The hazy streaks left behind by rushed, low-quality polishing jobs — corrected the right way.</p></div>
+          <div><b>Looks brand-new again</b><p>Erase years of swirls and scratches for a deep, glossy, showroom-fresh finish.</p></div>
         </li>
         <li class="cc-why-item reveal d1">
-          <span class="cc-why-ico"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M12 22a7 7 0 007-7c0-3-3-7-7-11C8 8 5 12 5 15a7 7 0 007 7z"/></svg></span>
-          <div><b>Lost Gloss &amp; Reflection</b><p>Bring back the deep, mirror-like reflections your paint had the day it left the showroom.</p></div>
+          <span class="cc-why-ico"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/></svg></span>
+          <div><b>Protects resale value</b><p>Well-corrected, cared-for paint holds its value and shows far better at trade-in or sale.</p></div>
+        </li>
+        <li class="cc-why-item reveal">
+          <span class="cc-why-ico"><svg viewBox="0 0 24 24" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span>
+          <div><b>True depth &amp; color</b><p>Level paint reflects like a mirror and brings back rich, saturated, factory-fresh color.</p></div>
+        </li>
+        <li class="cc-why-item reveal d1">
+          <span class="cc-why-ico"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M12 2s6 7 6 12a6 6 0 01-12 0c0-5 6-12 6-12z"/></svg></span>
+          <div><b>The right base for a coating</b><p>Correction first means your <a class="klink" href="/ceramic-coating-raleigh.html">ceramic coating</a> locks in a flawless finish, not the flaws.</p></div>
+        </li>
+        <li class="cc-why-item reveal">
+          <span class="cc-why-ico"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <div><b>Permanent, not a cover-up</b><p>Defects are physically polished out for good — a wax only hides them for a few weeks.</p></div>
+        </li>
+        <li class="cc-why-item reveal d1">
+          <span class="cc-why-ico"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M9 2h6M10 2v5l-4 9a3 3 0 003 4h6a3 3 0 003-4l-4-9V2"/><path d="M7 15h10"/></svg></span>
+          <div><b>Done safely, by hand</b><p>Paint thickness is measured and the least aggressive method is used to protect your clear coat.</p></div>
         </li>
       </ul>
       </div>
