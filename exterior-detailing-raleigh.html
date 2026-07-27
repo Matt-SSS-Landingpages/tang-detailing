@@ -35,27 +35,42 @@
 <!-- ===== Service Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "name":"Exterior Detailing",
-  "serviceType":"Automotive exterior detailing",
-  "description":"Professional exterior detailing for cars, trucks and SUVs in Raleigh and the greater Triangle. Foam hand wash, iron and tar decontamination, wheel and tire care, gloss-enhancing polish and paint protection.",
-  "url":"https://tangdetailing.com/exterior-detailing-raleigh.html",
-  "areaServed":["Raleigh NC","Cary NC","Durham NC","Wake Forest NC","Apex NC","Chapel Hill NC"],
-  "provider":{
-    "@type":"AutoDetailing",
-    "name":"Tang Detailing",
-    "telephone":"+19196706062",
-    "email":"tangdetailing@gmail.com",
-    "url":"https://tangdetailing.com/",
-    "priceRange":"$$",
-    "address":{"@type":"PostalAddress","streetAddress":"2336 Noble Road","addressLocality":"Raleigh","addressRegion":"NC","postalCode":"27608","addressCountry":"US"}
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Exterior Detailing",
+  "serviceType": "Automotive exterior detailing",
+  "description": "Professional exterior detailing for cars, trucks and SUVs in Raleigh and the greater Triangle. Foam hand wash, iron and tar decontamination, wheel and tire care, gloss-enhancing polish and paint protection.",
+  "url": "https://tangdetailing.com/exterior-detailing-raleigh.html",
+  "areaServed": [
+    "Raleigh NC",
+    "Cary NC",
+    "Durham NC",
+    "Wake Forest NC",
+    "Apex NC",
+    "Chapel Hill NC"
+  ],
+  "provider": {
+    "@type": "AutoDetailing",
+    "name": "Tang Detailing",
+    "telephone": "+19196706062",
+    "email": "tangdetailing@gmail.com",
+    "url": "https://tangdetailing.com/",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2336 Noble Road",
+      "addressLocality": "Raleigh",
+      "addressRegion": "NC",
+      "postalCode": "27608",
+      "addressCountry": "US"
+    },
+    "@id": "https://tangdetailing.com/#business"
   },
-  "offers":{
-    "@type":"Offer",
-    "priceCurrency":"USD",
-    "availability":"https://schema.org/InStock",
-    "url":"https://tangdetailing.com/exterior-detailing-raleigh.html"
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://tangdetailing.com/exterior-detailing-raleigh.html"
   }
 }
 </script>
@@ -63,15 +78,57 @@
 <!-- ===== FAQ Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"What is included in an exterior detail?","acceptedAnswer":{"@type":"Answer","text":"An exterior detail covers everything outside the vehicle — a foam hand wash, wheel and tire deep clean, iron and tar decontamination, bug and grime removal, a gloss-enhancing polish or wax, plus clean glass and dressed trim. The result is a bright, glossy, protected finish."}},
-    {"@type":"Question","name":"How much does exterior detailing cost in Raleigh?","acceptedAnswer":{"@type":"Answer","text":"Our exterior detailing ranges from about $150 for an express service up to $425 for a full show-level exterior with decontamination and polish. Pricing depends on the size and condition of your vehicle. Every quote is tailored to your car."}},
-    {"@type":"Question","name":"What's the difference between a wash and an exterior detail?","acceptedAnswer":{"@type":"Answer","text":"A wash removes loose dirt. An exterior detail goes much further — decontaminating bonded fallout, clay-treating the paint, polishing for gloss and adding protection. It restores and protects the finish rather than just cleaning the surface."}},
-    {"@type":"Question","name":"Do you clean wheels, tires and glass?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every exterior detail includes a thorough wheel and tire clean, tire dressing, streak-free glass and dressed exterior trim. Wheels and tires are one of the most impactful parts of a clean exterior, so we never skip them."}},
-    {"@type":"Question","name":"Do you come to me for exterior detailing?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tang Detailing is fully mobile — we bring our own water, power and equipment to your home or office across Raleigh and the greater Triangle. We just need a bit of space around the vehicle to work."}},
-    {"@type":"Question","name":"Should I get an exterior detail or a ceramic coating?","acceptedAnswer":{"@type":"Answer","text":"An exterior detail cleans, polishes and protects your paint with a wax or sealant that lasts weeks to months. A ceramic coating is a longer-term protection lasting years. Many clients start with an exterior detail and upgrade to a ceramic coating for lasting protection."}}
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is included in an exterior detail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An exterior detail covers everything outside the vehicle — a foam hand wash, wheel and tire deep clean, iron and tar decontamination, bug and grime removal, a gloss-enhancing polish or wax, plus clean glass and dressed trim. The result is a bright, glossy, protected finish."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does exterior detailing cost in Raleigh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our exterior detailing ranges from about $150 for an express service up to $425 for a full show-level exterior with decontamination and polish. Pricing depends on the size and condition of your vehicle. Every quote is tailored to your car."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a wash and an exterior detail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A wash removes loose dirt. An exterior detail goes much further — decontaminating bonded fallout, clay-treating the paint, polishing for gloss and adding protection. It restores and protects the finish rather than just cleaning the surface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you clean wheels, tires and glass?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every exterior detail includes a thorough wheel and tire clean, tire dressing, streak-free glass and dressed exterior trim. Wheels and tires are one of the most impactful parts of a clean exterior, so we never skip them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you come to me for exterior detailing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tang Detailing is fully mobile — we bring our own water, power and equipment to your home or office across Raleigh and the greater Triangle. We just need a bit of space around the vehicle to work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I get an exterior detail or a ceramic coating?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An exterior detail cleans, polishes and protects your paint with a wax or sealant that lasts weeks to months. A ceramic coating is a longer-term protection lasting years. Many clients start with an exterior detail and upgrade to a ceramic coating for lasting protection."
+      }
+    }
   ]
 }
 </script>
@@ -395,6 +452,27 @@
 @media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:34px;}}
 @media(max-width:520px){.cf-row{grid-template-columns:1fr;}}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tangdetailing.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Exterior Detailing",
+      "item": "https://tangdetailing.com/exterior-detailing-raleigh.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

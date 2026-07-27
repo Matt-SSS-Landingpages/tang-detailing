@@ -35,27 +35,42 @@
 <!-- ===== Service Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "name":"Ceramic Coating",
-  "serviceType":"Automotive ceramic coating installation",
-  "description":"Professional ceramic coating for cars, trucks and SUVs in Raleigh and the greater Triangle. Multi-year hydrophobic paint protection with deep gloss, UV resistance and scratch resistance, installed by certified detailers.",
-  "url":"https://tangdetailing.com/ceramic-coating-raleigh.html",
-  "areaServed":["Raleigh NC","Cary NC","Durham NC","Wake Forest NC","Apex NC","Chapel Hill NC"],
-  "provider":{
-    "@type":"AutoDetailing",
-    "name":"Tang Detailing",
-    "telephone":"+19196706062",
-    "email":"tangdetailing@gmail.com",
-    "url":"https://tangdetailing.com/",
-    "priceRange":"$$",
-    "address":{"@type":"PostalAddress","streetAddress":"2336 Noble Road","addressLocality":"Raleigh","addressRegion":"NC","postalCode":"27608","addressCountry":"US"}
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Ceramic Coating",
+  "serviceType": "Automotive ceramic coating installation",
+  "description": "Professional ceramic coating for cars, trucks and SUVs in Raleigh and the greater Triangle. Multi-year hydrophobic paint protection with deep gloss, UV resistance and scratch resistance, installed by certified detailers.",
+  "url": "https://tangdetailing.com/ceramic-coating-raleigh.html",
+  "areaServed": [
+    "Raleigh NC",
+    "Cary NC",
+    "Durham NC",
+    "Wake Forest NC",
+    "Apex NC",
+    "Chapel Hill NC"
+  ],
+  "provider": {
+    "@type": "AutoDetailing",
+    "name": "Tang Detailing",
+    "telephone": "+19196706062",
+    "email": "tangdetailing@gmail.com",
+    "url": "https://tangdetailing.com/",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2336 Noble Road",
+      "addressLocality": "Raleigh",
+      "addressRegion": "NC",
+      "postalCode": "27608",
+      "addressCountry": "US"
+    },
+    "@id": "https://tangdetailing.com/#business"
   },
-  "offers":{
-    "@type":"Offer",
-    "priceCurrency":"USD",
-    "availability":"https://schema.org/InStock",
-    "url":"https://tangdetailing.com/ceramic-coating-raleigh.html"
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://tangdetailing.com/ceramic-coating-raleigh.html"
   }
 }
 </script>
@@ -63,15 +78,57 @@
 <!-- ===== FAQ Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"How long does ceramic coating last?","acceptedAnswer":{"@type":"Answer","text":"It depends on the coating and how the car is maintained. Our entry coating lasts one to two years, while our professional-grade packages are rated for five to eight-plus years. All coatings hold up best with regular maintenance washes and an annual inspection."}},
-    {"@type":"Question","name":"Is ceramic coating better than wax?","acceptedAnswer":{"@type":"Answer","text":"Yes. A traditional wax lasts weeks to a couple of months, while a professional ceramic coating chemically bonds to the paint and lasts years. Ceramic provides far stronger UV, chemical and scratch resistance, plus a deeper gloss and easier washing."}},
-    {"@type":"Question","name":"Does ceramic coating prevent scratches and swirls?","acceptedAnswer":{"@type":"Answer","text":"A ceramic coating adds a hard sacrificial layer that dramatically reduces light swirls and wash-induced marring. It is not bulletproof — it will not stop rock chips or deep scratches — but it makes day-to-day paint care much more forgiving."}},
-    {"@type":"Question","name":"Do you correct the paint before coating?","acceptedAnswer":{"@type":"Answer","text":"Always. A coating locks in whatever is underneath it, so we decontaminate and machine-polish the paint to remove swirls and oxidation first. This paint-correction step is what gives a coated car that deep, mirror-like finish."}},
-    {"@type":"Question","name":"How do I maintain a ceramic-coated car?","acceptedAnswer":{"@type":"Answer","text":"Simply wash it with a pH-neutral car soap every couple of weeks and avoid automatic brush car washes. We also offer an annual coating maintenance and inspection to keep the hydrophobics and warranty in top shape."}},
-    {"@type":"Question","name":"Can you install the coating at my home or office?","acceptedAnswer":{"@type":"Answer","text":"In most cases, yes. Ceramic coating needs a clean, dry, covered space to cure properly. If your garage works, we can come to you; otherwise we can arrange installation at our facility. Contact us and we'll confirm the best option for your vehicle."}}
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does ceramic coating last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the coating and how the car is maintained. Our entry coating lasts one to two years, while our professional-grade packages are rated for five to eight-plus years. All coatings hold up best with regular maintenance washes and an annual inspection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is ceramic coating better than wax?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A traditional wax lasts weeks to a couple of months, while a professional ceramic coating chemically bonds to the paint and lasts years. Ceramic provides far stronger UV, chemical and scratch resistance, plus a deeper gloss and easier washing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does ceramic coating prevent scratches and swirls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A ceramic coating adds a hard sacrificial layer that dramatically reduces light swirls and wash-induced marring. It is not bulletproof — it won't stop rock chips or deep scratches — but it makes day-to-day paint care much more forgiving."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you correct the paint before coating?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Always. A coating locks in whatever is underneath it, so we decontaminate and machine-polish the paint to remove swirls and oxidation first. This paint-correction step is what gives a coated car that deep, mirror-like finish."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I maintain a ceramic-coated car?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simply wash it with a pH-neutral car soap every couple of weeks and avoid automatic brush car washes. We also offer an annual coating maintenance and inspection to keep the hydrophobics and warranty in top shape."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you install the coating at my home or office?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In most cases, yes. Ceramic coating needs a clean, dry, covered space to cure properly. If your garage works, we can come to you; otherwise we can arrange installation at our facility. Contact us and we'll confirm the best option for your vehicle."
+      }
+    }
   ]
 }
 </script>
@@ -391,6 +448,27 @@
 @media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:34px;}}
 @media(max-width:520px){.cf-row{grid-template-columns:1fr;}}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tangdetailing.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ceramic Coating",
+      "item": "https://tangdetailing.com/ceramic-coating-raleigh.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

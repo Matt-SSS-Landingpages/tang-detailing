@@ -35,27 +35,42 @@
 <!-- ===== Service Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "name":"Interior Detailing",
-  "serviceType":"Automotive interior detailing",
-  "description":"Professional interior detailing for cars, trucks and SUVs in Raleigh and the greater Triangle. Deep vacuum, carpet and upholstery steam cleaning, leather conditioning, glass cleaning and odor removal.",
-  "url":"https://tangdetailing.com/interior-detailing-raleigh.html",
-  "areaServed":["Raleigh NC","Cary NC","Durham NC","Wake Forest NC","Apex NC","Chapel Hill NC"],
-  "provider":{
-    "@type":"AutoDetailing",
-    "name":"Tang Detailing",
-    "telephone":"+19196706062",
-    "email":"tangdetailing@gmail.com",
-    "url":"https://tangdetailing.com/",
-    "priceRange":"$$",
-    "address":{"@type":"PostalAddress","streetAddress":"2336 Noble Road","addressLocality":"Raleigh","addressRegion":"NC","postalCode":"27608","addressCountry":"US"}
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Interior Detailing",
+  "serviceType": "Automotive interior detailing",
+  "description": "Professional interior detailing for cars, trucks and SUVs in Raleigh and the greater Triangle. Deep vacuum, carpet and upholstery steam cleaning, leather conditioning, glass cleaning and odor removal.",
+  "url": "https://tangdetailing.com/interior-detailing-raleigh.html",
+  "areaServed": [
+    "Raleigh NC",
+    "Cary NC",
+    "Durham NC",
+    "Wake Forest NC",
+    "Apex NC",
+    "Chapel Hill NC"
+  ],
+  "provider": {
+    "@type": "AutoDetailing",
+    "name": "Tang Detailing",
+    "telephone": "+19196706062",
+    "email": "tangdetailing@gmail.com",
+    "url": "https://tangdetailing.com/",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2336 Noble Road",
+      "addressLocality": "Raleigh",
+      "addressRegion": "NC",
+      "postalCode": "27608",
+      "addressCountry": "US"
+    },
+    "@id": "https://tangdetailing.com/#business"
   },
-  "offers":{
-    "@type":"Offer",
-    "priceCurrency":"USD",
-    "availability":"https://schema.org/InStock",
-    "url":"https://tangdetailing.com/interior-detailing-raleigh.html"
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://tangdetailing.com/interior-detailing-raleigh.html"
   }
 }
 </script>
@@ -63,15 +78,57 @@
 <!-- ===== FAQ Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"What is included in an interior detail?","acceptedAnswer":{"@type":"Answer","text":"An interior detail is a complete cabin clean — a thorough vacuum, carpet and upholstery steam clean, wiped and conditioned plastics and leather, cleaned vents and crevices, streak-free interior glass and odor neutralization. Every touchpoint is cleaned by hand."}},
-    {"@type":"Question","name":"How much does interior detailing cost in Raleigh?","acceptedAnswer":{"@type":"Answer","text":"Our interior detailing ranges from about $150 for a refresh up to $255 for a full deep clean. Pricing depends on the size and condition of the interior. Heavily soiled cabins, pet hair and stains may adjust the final quote."}},
-    {"@type":"Question","name":"Can you remove pet hair, stains and odors?","acceptedAnswer":{"@type":"Answer","text":"Yes. We specialize in lifting embedded pet hair, cleaning out food and drink stains, and neutralizing odors at the source rather than masking them. Severe cases may need extra time, which we'll confirm in your quote."}},
-    {"@type":"Question","name":"Do you clean leather and condition it?","acceptedAnswer":{"@type":"Answer","text":"Yes. We gently clean leather and vinyl surfaces, then apply a conditioner to keep them soft, protected and looking new. Fabric seats are steam-cleaned instead."}},
-    {"@type":"Question","name":"Do you come to me for interior detailing?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tang Detailing is fully mobile — we bring our own power and equipment to your home or office across Raleigh and the greater Triangle. We just need access to the vehicle to work."}},
-    {"@type":"Question","name":"How long does an interior detail take?","acceptedAnswer":{"@type":"Answer","text":"Most interior details take two to four hours depending on the size of the vehicle and how soiled the interior is. Cabins with heavy pet hair, stains or odor treatment take longer. We take the time needed to do it right."}}
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is included in an interior detail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An interior detail is a complete cabin clean — a thorough vacuum, carpet and upholstery steam clean, wiped and conditioned plastics and leather, cleaned vents and crevices, streak-free interior glass and odor neutralization. Every touchpoint is cleaned by hand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does interior detailing cost in Raleigh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our interior detailing ranges from about $150 for a refresh up to $255 for a full deep clean. Pricing depends on the size and condition of the interior. Heavily soiled cabins, pet hair and stains may adjust the final quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you remove pet hair, stains and odors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We specialize in lifting embedded pet hair, cleaning out food and drink stains, and neutralizing odors at the source rather than masking them. Severe cases may need extra time, which we'll confirm in your quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you clean leather and condition it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We gently clean leather and vinyl surfaces, then apply a conditioner to keep them soft, protected and looking new. Fabric seats are steam-cleaned instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you come to me for interior detailing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tang Detailing is fully mobile — we bring our own power and equipment to your home or office across Raleigh and the greater Triangle. We just need access to the vehicle to work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does an interior detail take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most interior details take two to four hours depending on the size of the vehicle and how soiled the interior is. Cabins with heavy pet hair, stains or odor treatment take longer. We take the time needed to do it right."
+      }
+    }
   ]
 }
 </script>
@@ -395,6 +452,27 @@
 @media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:34px;}}
 @media(max-width:520px){.cf-row{grid-template-columns:1fr;}}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tangdetailing.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Interior Detailing",
+      "item": "https://tangdetailing.com/interior-detailing-raleigh.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

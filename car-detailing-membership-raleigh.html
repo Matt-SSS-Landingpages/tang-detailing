@@ -35,28 +35,43 @@
 <!-- ===== Service Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "name":"Monthly Mobile Detailing Membership",
-  "serviceType":"Monthly mobile car detailing membership",
-  "description":"A recurring mobile detailing membership for busy Raleigh drivers. Tang Detailing visits your home or office on a monthly schedule to keep your vehicle showroom-clean, with priority scheduling and member-only perks.",
-  "url":"https://tangdetailing.com/car-detailing-membership-raleigh.html",
-  "areaServed":["Raleigh NC","Cary NC","Durham NC","Wake Forest NC","Apex NC","Chapel Hill NC"],
-  "provider":{
-    "@type":"AutoDetailing",
-    "name":"Tang Detailing",
-    "telephone":"+19196706062",
-    "email":"tangdetailing@gmail.com",
-    "url":"https://tangdetailing.com/",
-    "priceRange":"$$",
-    "address":{"@type":"PostalAddress","streetAddress":"2336 Noble Road","addressLocality":"Raleigh","addressRegion":"NC","postalCode":"27608","addressCountry":"US"}
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Monthly Mobile Detailing Membership",
+  "serviceType": "Monthly mobile car detailing membership",
+  "description": "A recurring mobile detailing membership for busy Raleigh drivers. Tang Detailing visits your home or office on a monthly schedule to keep your vehicle showroom-clean, with priority scheduling and member-only perks.",
+  "url": "https://tangdetailing.com/car-detailing-membership-raleigh.html",
+  "areaServed": [
+    "Raleigh NC",
+    "Cary NC",
+    "Durham NC",
+    "Wake Forest NC",
+    "Apex NC",
+    "Chapel Hill NC"
+  ],
+  "provider": {
+    "@type": "AutoDetailing",
+    "name": "Tang Detailing",
+    "telephone": "+19196706062",
+    "email": "tangdetailing@gmail.com",
+    "url": "https://tangdetailing.com/",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2336 Noble Road",
+      "addressLocality": "Raleigh",
+      "addressRegion": "NC",
+      "postalCode": "27608",
+      "addressCountry": "US"
+    },
+    "@id": "https://tangdetailing.com/#business"
   },
-  "offers":{
-    "@type":"Offer",
-    "category":"Subscription",
-    "priceCurrency":"USD",
-    "availability":"https://schema.org/InStock",
-    "url":"https://tangdetailing.com/car-detailing-membership-raleigh.html"
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://tangdetailing.com/car-detailing-membership-raleigh.html"
   }
 }
 </script>
@@ -64,15 +79,57 @@
 <!-- ===== FAQ Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"How does membership billing work?","acceptedAnswer":{"@type":"Answer","text":"Membership is billed as a simple flat monthly rate to the card on file. There are no contracts and no hidden fees — you're billed on the same date each month for as long as you stay a member."}},
-    {"@type":"Question","name":"Can I pause or cancel my membership?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can pause your membership while you travel or cancel anytime — just let us know before your next billing date. There are no cancellation fees and no long-term commitment."}},
-    {"@type":"Question","name":"What's included in each monthly visit?","acceptedAnswer":{"@type":"Answer","text":"Every visit includes a full exterior wash and decontamination, wheels and tires, interior vacuum and wipe-down, glass, and a protective spray sealant. Higher tiers add interior deep-cleaning and coating maintenance."}},
-    {"@type":"Question","name":"Can you service my car at the office?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. We're fully mobile and bring our own water and power, so we can detail your vehicle at your home or your office parking lot while you work — no drop-off required."}},
-    {"@type":"Question","name":"What happens if it rains on my scheduled day?","acceptedAnswer":{"@type":"Answer","text":"If weather makes it impossible to deliver quality results, we simply reschedule your visit to the next available slot at no charge. Members keep priority scheduling when we rebook."}},
-    {"@type":"Question","name":"Do members get a discount on ceramic coating?","acceptedAnswer":{"@type":"Answer","text":"Yes. Active members receive a member-only discount on ceramic coating and paint correction upgrades, plus complimentary coating maintenance on the plans that include it."}}
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does membership billing work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Membership is billed as a simple flat monthly rate to the card on file. There are no contracts and no hidden fees — you're billed on the same date each month for as long as you stay a member."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I pause or cancel my membership?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can pause your membership while you travel or cancel anytime — just let us know before your next billing date. There are no cancellation fees and no long-term commitment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in each monthly visit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every visit includes a full exterior wash and decontamination, wheels and tires, interior vacuum and wipe-down, glass, and a protective spray sealant. Higher tiers add interior deep-cleaning and coating maintenance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you service my car at the office?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We're fully mobile and bring our own water and power, so we can detail your vehicle at your home or your office parking lot while you work — no drop-off required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if it rains on my scheduled day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If weather makes it impossible to deliver quality results, we simply reschedule your visit to the next available slot at no charge. Members keep priority scheduling when we rebook."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do members get a discount on ceramic coating?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Active members receive a member-only discount on ceramic coating and paint correction upgrades, plus complimentary coating maintenance on the plans that include it."
+      }
+    }
   ]
 }
 </script>
@@ -411,6 +468,27 @@
   .m-hero-cta .btn{width:100%;justify-content:center;}
 }
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tangdetailing.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Maintenance Membership",
+      "item": "https://tangdetailing.com/car-detailing-membership-raleigh.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

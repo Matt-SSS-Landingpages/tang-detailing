@@ -334,50 +334,96 @@
 <!-- ===== LocalBusiness Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"AutoDetailing",
-  "name":"Tang Detailing",
-  "image":"https://tangdetailing.com/assets/images/background.1.jpg",
-  "description":"Premium mobile auto detailing, ceramic coating and paint correction serving Raleigh, Cary, Durham, Wake Forest, Apex and Chapel Hill, NC.",
-  "slogan":"A Detail Above",
-  "telephone":"+19196706062",
-  "email":"tangdetailing@gmail.com",
-  "url":"https://tangdetailing.com/",
-  "priceRange":"$$",
-  "address":{"@type":"PostalAddress","streetAddress":"2336 Noble Road","addressLocality":"Raleigh","addressRegion":"NC","postalCode":"27608","addressCountry":"US"},
-  "geo":{"@type":"GeoCoordinates","latitude":35.7796,"longitude":-78.6382},
-  "areaServed":["Raleigh NC","Cary NC","Durham NC","Wake Forest NC","Apex NC","Chapel Hill NC"],
-  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:30","closes":"18:00"}],
-  "sameAs":["https://share.google/hSN4AO8QVLmoaD8aV","https://www.instagram.com/tangdetailing/","https://www.facebook.com/TangDetailing/"],
-  "hasOfferCatalog":{"@type":"OfferCatalog","name":"Detailing Services","itemListElement":[
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Full Detail"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"340","maxPrice":"390","priceCurrency":"USD"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Ceramic Coating"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"799","priceCurrency":"USD"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Paint Correction"}}
-  ]}
+  "@context": "https://schema.org",
+  "@type": "AutoDetailing",
+  "@id": "https://tangdetailing.com/#business",
+  "name": "Tang Detailing",
+  "image": "https://tangdetailing.com/assets/images/background.1.jpg",
+  "description": "Premium mobile auto detailing, ceramic coating and paint correction serving Raleigh, Cary, Durham, Wake Forest, Apex and Chapel Hill, NC.",
+  "slogan": "A Detail Above",
+  "telephone": "+19196706062",
+  "email": "tangdetailing@gmail.com",
+  "url": "https://tangdetailing.com/",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2336 Noble Road",
+    "addressLocality": "Raleigh",
+    "addressRegion": "NC",
+    "postalCode": "27608",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 35.7796,
+    "longitude": -78.6382
+  },
+  "areaServed": [
+    "Raleigh NC",
+    "Cary NC",
+    "Durham NC",
+    "Wake Forest NC",
+    "Apex NC",
+    "Chapel Hill NC"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "08:30",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": [
+    "https://share.google/hSN4AO8QVLmoaD8aV",
+    "https://www.instagram.com/tangdetailing/",
+    "https://www.facebook.com/TangDetailing/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Detailing Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Full Detail"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "240",
+          "maxPrice": "390",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Ceramic Coating"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Paint Correction"
+        }
+      }
+    ]
+  },
+  "logo": "https://tangdetailing.com/assets/images/brand-logo.avif"
 }
 </script>
 
-<!-- ===== FAQ Schema ===== -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"Do you come to my location in Raleigh?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tang Detailing is a fully mobile service. We bring our own water, power and professional equipment to your home or office anywhere in Raleigh and the greater Triangle area."}},
-    {"@type":"Question","name":"How long does a full detail take?","acceptedAnswer":{"@type":"Answer","text":"A standard detail takes 3–4 hours, while a full detail or paint correction can run 4–8 hours depending on vehicle size and condition. We never rush a job."}},
-    {"@type":"Question","name":"How much does mobile detailing in Raleigh cost?","acceptedAnswer":{"@type":"Answer","text":"Standard service ranges $240–$290, full details $240–$390, exterior details from $150, and interior packages from $150. Ceramic coating is quoted per vehicle."}},
-    {"@type":"Question","name":"What is ceramic coating and how long does it last?","acceptedAnswer":{"@type":"Answer","text":"Ceramic coating is a liquid polymer that chemically bonds to your paint, creating a durable, hydrophobic layer of protection. Professional coatings from Tang Detailing last 2–7 years depending on the package."}},
-    {"@type":"Question","name":"Do I need to be home during the appointment?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. As long as we have access to your vehicle and a place to work, you're free to go about your day. Many clients leave us to it while they work or run errands."}},
-    {"@type":"Question","name":"What areas do you serve?","acceptedAnswer":{"@type":"Answer","text":"We serve Raleigh, Cary, Durham, Wake Forest, Apex and Chapel Hill, NC, plus surrounding Triangle communities."}},
-    {"@type":"Question","name":"What products do you use?","acceptedAnswer":{"@type":"Answer","text":"We use only professional-grade products from Gyeon, CarPro, Gtechniq, Rupes and P&S Detail Products — never cheap consumer chemicals."}},
-    {"@type":"Question","name":"Is Tang Detailing insured?","acceptedAnswer":{"@type":"Answer","text":"Yes, we are fully insured and every service is backed by our satisfaction guarantee."}},
-    {"@type":"Question","name":"What is paint correction?","acceptedAnswer":{"@type":"Answer","text":"Paint correction is a multi-stage machine polishing process that removes swirl marks, scratches and oxidation to restore a deep, glossy finish before coating."}},
-    {"@type":"Question","name":"How often should I detail my car?","acceptedAnswer":{"@type":"Answer","text":"For most drivers, a full detail every 3–4 months keeps a vehicle in top shape. Our Maintenance Club members receive scheduled visits to keep protection at its peak."}},
-    {"@type":"Question","name":"Can you remove scratches and swirl marks?","acceptedAnswer":{"@type":"Answer","text":"Most light-to-moderate scratches and swirl marks can be dramatically reduced or removed with professional paint correction. Deeper scratches through the clear coat may only be improved."}},
-    {"@type":"Question","name":"How do I book?","acceptedAnswer":{"@type":"Answer","text":"Click Get Instant Quote to build your package online, or call (919) 670-6062. We confirm your appointment and come to you."}}
-  ]
-}
-</script>
 <style>
 /* ===================== BLOG ARTICLE ===================== */
 .post-hero{position:relative;min-height:56vh;display:flex;align-items:flex-end;padding-top:calc(var(--nav-h) + 40px);padding-bottom:clamp(34px,5vw,60px);background:var(--ink);overflow:hidden;}
@@ -417,6 +463,33 @@
 .pm-card h3{font-family:'Inter',sans-serif;font-weight:600;color:var(--ink);font-size:19px;line-height:1.25;margin-top:10px;}
 @media(max-width:640px){.pm-grid{grid-template-columns:1fr;}}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tangdetailing.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://tangdetailing.com/blog/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ceramic Coating in Raleigh, NC: Is It Worth It?",
+      "item": "https://tangdetailing.com/blog/ceramic-coating-raleigh-worth-it.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

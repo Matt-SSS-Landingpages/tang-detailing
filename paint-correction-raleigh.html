@@ -35,27 +35,42 @@
 <!-- ===== Service Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "name":"Paint Correction",
-  "serviceType":"Automotive paint correction",
-  "description":"Professional multi-stage paint correction for cars, trucks and SUVs in Raleigh and the greater Triangle. Machine polishing removes swirl marks, scratches, water spots and oxidation to restore deep gloss and clarity.",
-  "url":"https://tangdetailing.com/paint-correction-raleigh.html",
-  "areaServed":["Raleigh NC","Cary NC","Durham NC","Wake Forest NC","Apex NC","Chapel Hill NC"],
-  "provider":{
-    "@type":"AutoDetailing",
-    "name":"Tang Detailing",
-    "telephone":"+19196706062",
-    "email":"tangdetailing@gmail.com",
-    "url":"https://tangdetailing.com/",
-    "priceRange":"$$",
-    "address":{"@type":"PostalAddress","streetAddress":"2336 Noble Road","addressLocality":"Raleigh","addressRegion":"NC","postalCode":"27608","addressCountry":"US"}
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Paint Correction",
+  "serviceType": "Automotive paint correction",
+  "description": "Professional multi-stage paint correction for cars, trucks and SUVs in Raleigh and the greater Triangle. Machine polishing removes swirl marks, scratches, water spots and oxidation to restore deep gloss and clarity.",
+  "url": "https://tangdetailing.com/paint-correction-raleigh.html",
+  "areaServed": [
+    "Raleigh NC",
+    "Cary NC",
+    "Durham NC",
+    "Wake Forest NC",
+    "Apex NC",
+    "Chapel Hill NC"
+  ],
+  "provider": {
+    "@type": "AutoDetailing",
+    "name": "Tang Detailing",
+    "telephone": "+19196706062",
+    "email": "tangdetailing@gmail.com",
+    "url": "https://tangdetailing.com/",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2336 Noble Road",
+      "addressLocality": "Raleigh",
+      "addressRegion": "NC",
+      "postalCode": "27608",
+      "addressCountry": "US"
+    },
+    "@id": "https://tangdetailing.com/#business"
   },
-  "offers":{
-    "@type":"Offer",
-    "priceCurrency":"USD",
-    "availability":"https://schema.org/InStock",
-    "url":"https://tangdetailing.com/paint-correction-raleigh.html"
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://tangdetailing.com/paint-correction-raleigh.html"
   }
 }
 </script>
@@ -63,15 +78,57 @@
 <!-- ===== FAQ Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"What is paint correction?","acceptedAnswer":{"@type":"Answer","text":"Paint correction is a multi-stage machine polishing process that permanently removes swirl marks, scratches, water spots and oxidation from your clear coat. Unlike a wax or glaze that hides defects, correction actually levels the paint to restore true depth, clarity and gloss."}},
-    {"@type":"Question","name":"Can you remove scratches and swirl marks?","acceptedAnswer":{"@type":"Answer","text":"Most light-to-moderate scratches and swirl marks can be dramatically reduced or fully removed with professional paint correction. Deeper scratches that have gone through the clear coat can usually be improved but not completely erased without repainting."}},
-    {"@type":"Question","name":"How long does paint correction take?","acceptedAnswer":{"@type":"Answer","text":"It depends on the level of correction and the condition of your paint. A one-step enhancement often takes a full day, while multi-stage correction on heavily swirled paint can take two or more days. We never rush the process."}},
-    {"@type":"Question","name":"What is the difference between one-step and multi-stage correction?","acceptedAnswer":{"@type":"Answer","text":"A one-step (or enhancement) polish removes roughly 60 to 70 percent of defects and boosts gloss in a single pass, great value for newer or lightly marred cars. Multi-stage correction uses compounding plus refining steps to remove 85 to 95 percent-plus of defects for near-flawless, show-quality results."}},
-    {"@type":"Question","name":"Should I get a ceramic coating after paint correction?","acceptedAnswer":{"@type":"Answer","text":"We highly recommend it. Correction restores the paint to its best possible condition, and a ceramic coating locks that finish in and protects it for years. Applying a coating over freshly corrected paint is the ideal time to do it."}},
-    {"@type":"Question","name":"Will paint correction damage my clear coat?","acceptedAnswer":{"@type":"Answer","text":"No. We measure your paint thickness and use the least aggressive method needed to safely remove defects. Professional correction removes only a few microns of clear coat, well within safe limits, to reveal fresh, level paint underneath."}}
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is paint correction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Paint correction is a multi-stage machine polishing process that permanently removes swirl marks, scratches, water spots and oxidation from your clear coat. Unlike a wax or glaze that hides defects, correction actually levels the paint to restore true depth, clarity and gloss."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you remove scratches and swirl marks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most light-to-moderate scratches and swirl marks can be dramatically reduced or fully removed with professional paint correction. Deeper scratches that have gone through the clear coat can usually be improved but not completely erased without repainting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does paint correction take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the level of correction and the condition of your paint. A one-step enhancement often takes a full day, while multi-stage correction on heavily swirled paint can take two or more days. We never rush the process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What’s the difference between one-step and multi-stage correction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A one-step (or enhancement) polish removes roughly 60–70% of defects and boosts gloss in a single pass — great value for newer or lightly marred cars. Multi-stage correction uses compounding plus refining steps to remove 85–95%-plus of defects for near-flawless, show-quality results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I get a ceramic coating after paint correction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We highly recommend it. Correction restores the paint to its best possible condition, and a ceramic coating locks that finish in and protects it for years. Applying a coating over freshly corrected paint is the ideal time to do it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will paint correction damage my clear coat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We measure your paint thickness and use the least aggressive method needed to safely remove defects. Professional correction removes only a few microns of clear coat, well within safe limits, to reveal fresh, level paint underneath."
+      }
+    }
   ]
 }
 </script>
@@ -391,6 +448,27 @@
 @media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:34px;}}
 @media(max-width:520px){.cf-row{grid-template-columns:1fr;}}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tangdetailing.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Paint Correction",
+      "item": "https://tangdetailing.com/paint-correction-raleigh.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

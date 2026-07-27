@@ -35,27 +35,42 @@
 <!-- ===== Service Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "name":"Full Detail",
-  "serviceType":"Complete interior and exterior auto detailing",
-  "description":"Complete interior and exterior full detailing for cars, trucks and SUVs in Raleigh and the greater Triangle. Deep interior clean, hand wash, decontamination, gloss enhancement and protection — inside and out, by hand.",
-  "url":"https://tangdetailing.com/full-detail-raleigh.html",
-  "areaServed":["Raleigh NC","Cary NC","Durham NC","Wake Forest NC","Apex NC","Chapel Hill NC"],
-  "provider":{
-    "@type":"AutoDetailing",
-    "name":"Tang Detailing",
-    "telephone":"+19196706062",
-    "email":"tangdetailing@gmail.com",
-    "url":"https://tangdetailing.com/",
-    "priceRange":"$$",
-    "address":{"@type":"PostalAddress","streetAddress":"2336 Noble Road","addressLocality":"Raleigh","addressRegion":"NC","postalCode":"27608","addressCountry":"US"}
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Full Detail",
+  "serviceType": "Complete interior and exterior auto detailing",
+  "description": "Complete interior and exterior full detailing for cars, trucks and SUVs in Raleigh and the greater Triangle. Deep interior clean, hand wash, decontamination, gloss enhancement and protection — inside and out, by hand.",
+  "url": "https://tangdetailing.com/full-detail-raleigh.html",
+  "areaServed": [
+    "Raleigh NC",
+    "Cary NC",
+    "Durham NC",
+    "Wake Forest NC",
+    "Apex NC",
+    "Chapel Hill NC"
+  ],
+  "provider": {
+    "@type": "AutoDetailing",
+    "name": "Tang Detailing",
+    "telephone": "+19196706062",
+    "email": "tangdetailing@gmail.com",
+    "url": "https://tangdetailing.com/",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2336 Noble Road",
+      "addressLocality": "Raleigh",
+      "addressRegion": "NC",
+      "postalCode": "27608",
+      "addressCountry": "US"
+    },
+    "@id": "https://tangdetailing.com/#business"
   },
-  "offers":{
-    "@type":"Offer",
-    "priceCurrency":"USD",
-    "availability":"https://schema.org/InStock",
-    "url":"https://tangdetailing.com/full-detail-raleigh.html"
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://tangdetailing.com/full-detail-raleigh.html"
   }
 }
 </script>
@@ -63,15 +78,57 @@
 <!-- ===== FAQ Schema ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"What is included in a full detail?","acceptedAnswer":{"@type":"Answer","text":"A full detail covers your entire vehicle inside and out — a foam hand wash and wheel clean, iron and tar decontamination, a gloss-enhancing polish or wax, plus a complete interior deep clean of carpets, seats, plastics, glass and vents. It's the most thorough single-visit service we offer."}},
-    {"@type":"Question","name":"How long does a full detail take?","acceptedAnswer":{"@type":"Answer","text":"Most full details take four to seven hours depending on the size and condition of the vehicle. Larger SUVs, trucks and heavily soiled interiors take longer. We never rush — the goal is a thorough, showroom-fresh result inside and out."}},
-    {"@type":"Question","name":"How much does a full detail cost in Raleigh?","acceptedAnswer":{"@type":"Answer","text":"Our full detail packages range from about $340 to $390 depending on vehicle size and condition. Coupes and sedans sit at the lower end, while large SUVs, trucks and three-row vehicles are at the top. Every quote is tailored to your specific vehicle."}},
-    {"@type":"Question","name":"Do you come to me for a full detail?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tang Detailing is a mobile service — we bring our own water, power and equipment to your home or office across Raleigh and the greater Triangle. We just need a bit of space around the vehicle to work."}},
-    {"@type":"Question","name":"How often should I get a full detail?","acceptedAnswer":{"@type":"Answer","text":"For most daily drivers, a full detail two to three times a year keeps the vehicle looking and feeling new. If you carry kids, pets or eat in the car, more frequent interior attention helps. A maintenance membership keeps it fresh in between."}},
-    {"@type":"Question","name":"What's the difference between a full detail and a ceramic coating?","acceptedAnswer":{"@type":"Answer","text":"A full detail deep-cleans and refreshes your entire vehicle inside and out. A ceramic coating is a longer-term paint protection applied to the exterior. Many clients start with a full detail, then add a ceramic coating to lock in and protect the finish."}}
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is included in a full detail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A full detail covers your entire vehicle inside and out — a foam hand wash and wheel clean, iron and tar decontamination, a gloss-enhancing polish or wax, plus a complete interior deep clean of carpets, seats, plastics, glass and vents. It's the most thorough single-visit service we offer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a full detail take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most full details take four to seven hours depending on the size and condition of the vehicle. Larger SUVs, trucks and heavily soiled interiors take longer. We never rush — the goal is a thorough, showroom-fresh result inside and out."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a full detail cost in Raleigh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our full detail packages range from about $340 to $390 depending on vehicle size and condition. Coupes and sedans sit at the lower end, while large SUVs, trucks and three-row vehicles are at the top. Every quote is tailored to your specific vehicle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you come to me for a full detail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tang Detailing is a mobile service — we bring our own water, power and equipment to your home or office across Raleigh and the greater Triangle. We just need a bit of space around the vehicle to work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I get a full detail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most daily drivers, a full detail two to three times a year keeps the vehicle looking and feeling new. If you carry kids, pets or eat in the car, more frequent interior attention helps. A maintenance membership keeps it fresh in between."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a full detail and a ceramic coating?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A full detail deep-cleans and refreshes your entire vehicle inside and out. A ceramic coating is a longer-term paint protection applied to the exterior. Many clients start with a full detail, then add a ceramic coating to lock in and protect the finish."
+      }
+    }
   ]
 }
 </script>
@@ -395,6 +452,27 @@
 @media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:34px;}}
 @media(max-width:520px){.cf-row{grid-template-columns:1fr;}}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tangdetailing.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Full Detailing",
+      "item": "https://tangdetailing.com/full-detail-raleigh.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
