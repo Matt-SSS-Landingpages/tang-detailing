@@ -130,6 +130,10 @@ section{padding:clamp(64px,9vw,120px) 0;}
 .btn-dark{background:var(--ink);color:#fff;}
 .btn-dark:hover{background:#000;transform:translateY(-2px);}
 .btn-lg{padding:18px 38px;font-size:14px;}
+@media(max-width:560px){
+  .btn{white-space:normal;max-width:100%;text-align:center;}
+  .btn-lg{padding:15px 22px;font-size:13px;}
+}
 
 /* ---------- Nav ---------- */
 .nav{
