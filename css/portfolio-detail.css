@@ -18,6 +18,8 @@
 
 /* ---- Gallery ---- */
 .pd-gallery{background:var(--black-2);padding:clamp(36px,5vw,60px) 0;}
+/* Compact gallery — keep photos readable alongside the copy, not oversized */
+.pd-gallery .wrap{max-width:760px;}
 .pd-ba{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
 .pd-ba.single{grid-template-columns:1fr;}
 .pd-ba-item{position:relative;margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--border-dark);aspect-ratio:4/3;background:#0b0b0f;}
@@ -40,7 +42,12 @@
 
 /* ---- Aside card ---- */
 .pd-aside{position:sticky;top:calc(var(--nav-h) + 20px);}
-.pd-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 26px;box-shadow:0 24px 48px -28px rgba(0,0,0,0.25);}
+.pd-card{position:relative;background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 26px;box-shadow:0 24px 48px -28px rgba(0,0,0,0.25);}
+.pd-card>*{position:relative;z-index:1;}
+/* grain baked into the card, matching the membership plan cards */
+.pd-card::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0.55;mix-blend-mode:multiply;border-radius:inherit;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:170px 170px;}
 .pd-card h3{font-family:'Anton',sans-serif;font-weight:400;font-size:19px;letter-spacing:0.01em;text-transform:uppercase;color:var(--ink);margin-bottom:18px;}
 .pd-facts{display:grid;gap:0;margin-bottom:24px;}
 .pd-facts div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--border);}

@@ -4,6 +4,13 @@
 (function () {
   'use strict';
 
+  /* ---- Always land at the top on a new page (ignore browser scroll
+     restoration / bfcache), but honor intentional #anchor links ---- */
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.addEventListener('pageshow', function () {
+    if (!window.location.hash) window.scrollTo(0, 0);
+  });
+
   /* ---- Nav scroll state ---- */
   var nav = document.querySelector('.nav');
   function onScroll() {

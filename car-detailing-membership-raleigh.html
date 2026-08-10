@@ -237,9 +237,18 @@
 .m-step p{font-size:15px;color:rgba(255,255,255,0.62);font-weight:300;line-height:1.7;}
 
 /* Plan tiers */
+/* ---- Plans section: dark, grainy backdrop so the white cards pop ---- */
+.m-plans-sec{position:relative;overflow:hidden;background:linear-gradient(180deg,#16161a 0%,#0a0a0c 100%);}
+.m-plans-sec::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0.32;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px 200px;}
+.m-plans-sec::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(100% 60% at 50% 0%,rgba(37,99,235,0.14),transparent 60%);}
+.m-plans-sec .wrap{position:relative;z-index:1;}
+.m-plans-sec .section-title{color:#fff;}
+.m-plans-sec .section-lead{color:rgba(255,255,255,0.66);}
+.m-plans-extra{color:#fff;background:rgba(37,99,235,0.16);border-color:rgba(37,99,235,0.5);}
+
 /* ---- Plans: grainy tier cards ---- */
 .m-plans{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;align-items:stretch;}
-.m-plan{position:relative;background:#fff;border:1px solid var(--border-dark);border-radius:20px;padding:34px 30px 30px;display:flex;flex-direction:column;transition:transform .35s cubic-bezier(.2,.6,.2,1),box-shadow .35s,border-color .35s;}
+.m-plan{position:relative;background:#fff;border:1px solid rgba(255,255,255,0.14);border-radius:20px;padding:34px 30px 30px;display:flex;flex-direction:column;box-shadow:0 24px 50px -24px rgba(0,0,0,0.7);transition:transform .35s cubic-bezier(.2,.6,.2,1),box-shadow .35s,border-color .35s;}
 .m-plan>*{position:relative;z-index:1;}
 /* grain texture baked into each card */
 .m-plan::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0.55;mix-blend-mode:multiply;border-radius:inherit;
@@ -662,7 +671,7 @@
 </section>
 
 <!-- ===================== PLANS ===================== -->
-<section class="surface-cream m-plans-sec">
+<section class="m-plans-sec">
   <div class="wrap">
     <div class="m-head center reveal" style="max-width:none;">
       <h2 class="section-title" style="white-space:nowrap;">Choose your <em>recurring plan</em></h2>
@@ -806,10 +815,6 @@
       </div>
       <div class="m-why-video reveal d1">
         <img src="/assets/images/maintance.jpg" alt="Professional Tang Detailing membership work on a client's vehicle in Raleigh NC" loading="lazy">
-        <div class="m-why-video-cap">
-          <span class="dot"></span>
-          <span>Real Tang Detailing work</span>
-        </div>
       </div>
     </div>
   </div>
@@ -971,6 +976,7 @@
         <div class="footer-social">
           <a href="https://www.instagram.com/tangdetailing/" target="_blank" rel="noopener" aria-label="Tang Detailing on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
           <a href="https://www.facebook.com/TangDetailing/" target="_blank" rel="noopener" aria-label="Tang Detailing on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.tiktok.com/@tangdetailing" target="_blank" rel="noopener" aria-label="Tang Detailing on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
         </div>
         <address class="footer-contact"><strong>Tang Detailing</strong><br>2336 Noble Road, Raleigh, NC 27608<br><a href="tel:+19196706062">(919) 670-6062</a></address>
         <p class="footer-hours"><strong>Hours:</strong> Open daily · 8:30 AM – 6 PM</p>
