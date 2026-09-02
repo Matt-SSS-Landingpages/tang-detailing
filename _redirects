@@ -20,5 +20,5 @@
 # /quote               /contact.html                          301
 # /instagram           https://www.instagram.com/tangdetailing/ 302
 
-# ---- Apex -> www consolidation (must stay LAST: catch-all splat) ----
-https://tangdetailing.com/*  https://www.tangdetailing.com/:splat  301!
+# apex→www handled by Cloudflare zone Redirect Rule (Rules → Redirect Rules)
+# _redirects cannot match on hostname — path only
