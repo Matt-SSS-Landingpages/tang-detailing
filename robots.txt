@@ -4,4 +4,4 @@ Allow: /
 # Post-conversion page — no SEO value
 Disallow: /thank-you.html
 
-Sitemap: https://tangdetailing.com/sitemap.xml
+Sitemap: https://www.tangdetailing.com/sitemap.xml
