@@ -11,8 +11,8 @@
 /bookingonline         /contact.html                         301
 
 # ---- Legacy /services/* and old blog slugs (from Search Console 404s) ----
-/services/ceramic-coating   https://www.tangdetailing.com/ceramic-coating-raleigh.html   301
-/blog/interior-car-detailing-in-raleigh-complete-guide   https://www.tangdetailing.com/blog/interior-car-detailing-raleigh-guide.html   301
+/services/ceramic-coating   https://www.tangdetailing.com/ceramic-coating-raleigh   301
+/blog/interior-car-detailing-in-raleigh-complete-guide   https://www.tangdetailing.com/blog/interior-car-detailing-raleigh-guide   301
 
 # ---- Placeholders: uncomment and adjust as these pages/URLs go live ----
 # /membership          /car-detailing-membership-raleigh.html 301
