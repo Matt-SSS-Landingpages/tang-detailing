@@ -3,12 +3,17 @@
 # Keep old/marketing URLs alive with permanent 301s so link equity is preserved.
 
 # ---- Confirmed 301s ----
-/mobile-detailing-raleigh.html   /                           301
-/paint-correction      /paint-correction-raleigh.html        301
-/ceramic-coating       /ceramic-coating-raleigh.html         301
-/car-detailing         /                                     301
-/vehicle-maintenance   /car-detailing-membership-raleigh.html 301
-/bookingonline         /contact.html                         301
+/mobile-detailing-raleigh.html   /                                    301
+/paint-correction        /paint-correction-raleigh                    301
+/ceramic-coating         /ceramic-coating-raleigh                     301
+/car-detailing           /#services                                   301
+/vehicle-maintenance     /car-detailing-membership-raleigh            301
+/bookingonline           /contact                                     301
+/interior-detailing-34   /interior-detailing-raleigh                  301
+/car-detailing-reviews   /                                            301
+
+# /privacy and /t-c resolve directly to /privacy.html and /t-c.html
+# (Cloudflare Pages serves clean URLs natively — no redirect needed)
 
 # ---- Legacy /services/* and old blog slugs (from Search Console 404s) ----
 /services/ceramic-coating   https://www.tangdetailing.com/ceramic-coating-raleigh   301
