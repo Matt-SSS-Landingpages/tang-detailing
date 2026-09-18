@@ -15,6 +15,10 @@
 # /privacy and /t-c resolve directly to /privacy.html and /t-c.html
 # (Cloudflare Pages serves clean URLs natively — no redirect needed)
 
+# ---- Blog hub: /blog is canonical, matching /portfolio and the rest of the site ----
+# Was /blog/ — the only trailing-slash URL on the site, and every nav link 301'd into it.
+/blog/                   /blog                                        301
+
 # ---- Legacy /services/* and old blog slugs (from Search Console 404s) ----
 /services/ceramic-coating   https://www.tangdetailing.com/ceramic-coating-raleigh   301
 /blog/interior-car-detailing-in-raleigh-complete-guide   https://www.tangdetailing.com/blog/interior-car-detailing-raleigh-guide   301
