@@ -86,6 +86,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .pf-filter:hover{transform:translateY(-2px);background:rgba(255,255,255,0.14);border-color:rgba(255,255,255,0.5);}
 .pf-filter.active{color:#fff;background:var(--blue);border-color:var(--blue);box-shadow:0 8px 22px rgba(37,99,235,0.45);}
 
+/* ---- About the work (context below the grid) ---- */
+.pf-about{padding:clamp(52px,6vw,88px) 0;}
+.pf-about-head{max-width:760px;margin:0 0 clamp(32px,4vw,48px);}
+.pf-about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(26px,3vw,40px);}
+.pf-about-col h3{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(17px,1.5vw,20px);line-height:1.15;letter-spacing:0.01em;text-transform:uppercase;color:var(--ink);margin:0 0 12px;padding-top:16px;border-top:2px solid var(--blue);display:inline-block;}
+.pf-about-col p{font-size:15px;line-height:1.75;color:var(--ink-soft);font-weight:300;margin:0 0 14px;}
+.pf-about-col p:last-child{margin-bottom:0;}
+.pf-about-foot{margin:clamp(30px,3.5vw,44px) 0 0;padding-top:24px;border-top:1px solid rgba(9,9,11,0.12);font-size:15px;line-height:1.75;color:var(--ink-soft);font-weight:300;}
+@media(max-width:900px){.pf-about-grid{grid-template-columns:1fr;gap:30px;}}
+
 /* ---- Grid (white + grainy, edgy cards) ---- */
 .pf-section{position:relative;overflow:hidden;background:linear-gradient(180deg,#16161a 0%,#0a0a0c 100%);padding:clamp(48px,6vw,84px) 0;}
 .pf-section::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0.32;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px 200px;}
@@ -417,6 +427,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </a>
 
     </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT THE WORK ===================== -->
+<section class="surface-cream pf-about">
+  <div class="wrap">
+    <div class="pf-about-head reveal">
+      <h2 class="section-title">What you're <em>looking at</em></h2>
+      <p class="section-lead">Every project above is a real customer vehicle, photographed where the work happened — in a driveway, a garage, or a parking lot somewhere in the Triangle. No stock photos, no studio lighting, no cars we didn't touch.</p>
+    </div>
+
+    <div class="pf-about-grid">
+      <article class="pf-about-col reveal">
+        <h3>Ceramic coating projects</h3>
+        <p>Most of the work here is <a class="klink" href="/ceramic-coating-raleigh">ceramic coating</a>, because it's what people ask for most and what shows the clearest difference. A coating is a liquid polymer that bonds to the factory clear coat and hardens into a protective layer — it repels water, resists UV fading, and makes washing dramatically easier for years rather than weeks.</p>
+        <p>The vehicles fall into two camps. Brand-new cars coated before anything touches the paint, like the <a class="klink" href="/portfolio/toyota-4runner-ceramic-coating-in-raleigh">Toyota 4Runner</a> and the <a class="klink" href="/portfolio/lexus-is350-ceramic-coating-in-north-raleigh">Lexus IS350</a>, where there's nothing to fix first. And daily drivers with real mileage on them, like the <a class="klink" href="/portfolio/chevrolet-silverado-ceramic-coating-in-raleigh">Chevrolet Silverado</a>, where the paint gets corrected before a drop of coating goes on.</p>
+      </article>
+
+      <article class="pf-about-col reveal d1">
+        <h3>Paint correction projects</h3>
+        <p><a class="klink" href="/paint-correction-raleigh">Paint correction</a> is machine polishing that permanently removes swirl marks, light scratches and oxidation by levelling a microscopic amount of clear coat. It's not a wax or a filler — nothing is hidden, and the defects don't reappear after the first wash.</p>
+        <p>It matters most on dark paint, where every swirl catches the light. The <a class="klink" href="/portfolio/bmw-m340i-paint-correction-in-raleigh">BMW M340i</a> is the clearest example on this page. Correction is also the first half of most coating jobs on a used car, which is why several projects listed under ceramic coating involve correction work too.</p>
+      </article>
+
+      <article class="pf-about-col reveal d2">
+        <h3>Full detail projects</h3>
+        <p>A <a class="klink" href="/full-detail-raleigh">full detail</a> covers both ends of the car: a decontamination wash, wheels and trim outside, then steam cleaning, extraction and surface conditioning inside. It's the option for a car that needs to be genuinely reset rather than protected long-term.</p>
+        <p>The range is wide. Performance cars like the <a class="klink" href="/portfolio/nissan-gtr-full-detail-in-raleigh">Nissan GT-R</a> and <a class="klink" href="/portfolio/porsche-911-turbo-s-full-detail-in-raleigh">Porsche 911 Turbo S</a>, and vehicles with specific needs — the <a class="klink" href="/portfolio/range-rover-full-detail-in-north-raleigh">matte-wrapped Range Rover</a> gets no wax or polish at all, since either would gloss the film.</p>
+      </article>
+    </div>
+
+    <p class="pf-about-foot reveal">Recurring clients are on our <a class="klink" href="/car-detailing-membership-raleigh">maintenance membership</a>, which is how coated vehicles actually reach the lifespan on the label. We work across <a class="klink" href="/">Raleigh</a>, <a class="klink" href="/mobile-detailing-cary">Cary</a>, <a class="klink" href="/mobile-detailing-durham">Durham</a>, <a class="klink" href="/mobile-detailing-wake-forest">Wake Forest</a>, <a class="klink" href="/mobile-detailing-apex">Apex</a> and <a class="klink" href="/mobile-detailing-chapel-hill">Chapel Hill</a> — we come to you.</p>
   </div>
 </section>
 
