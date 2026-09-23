@@ -12,7 +12,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Contact Tang Detailing | Book Mobile Detailing in Raleigh NC</title>
-<meta name="description" content="Contact Tang Detailing for premium mobile detailing, ceramic coating and paint correction in Raleigh & the Triangle. Call (919) 670-6062 or request a free quote.">
+<meta name="description" content="Request a free quote or book mobile detailing online in Raleigh & the Triangle. Ceramic coating, paint correction and full details. Call (919) 670-6062.">
 <link rel="canonical" href="https://www.tangdetailing.com/contact">
 <meta name="robots" content="index,follow">
 
@@ -320,6 +320,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .book-eyebrow{display:inline-block;font-size:12px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--blue);margin-bottom:14px;}
 .book-copy .section-lead{margin-bottom:28px;max-width:520px;}
 .book-note{margin-top:20px;font-size:14px;color:var(--ink-soft);font-weight:300;}
+.contact-alt{margin-top:24px;font-size:14.5px;font-weight:300;line-height:1.6;color:rgba(255,255,255,.72);}
+/* .klink's faint blue underline disappears against the dark panel — make the
+   alternate path unmistakably clickable, since it's the only route to booking
+   for anyone who scrolled straight past the hero. */
+.contact-alt a{color:#fff;font-weight:500;border-bottom-color:var(--blue);}
+.contact-alt a:hover{color:var(--blue);}
 .book-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:22px;}
 .book-steps li{display:flex;gap:16px;align-items:flex-start;}
 .book-step-num{flex:none;width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:#fff;font-family:'Anton',sans-serif;font-size:15px;}
@@ -460,6 +466,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .contact-hero .about-eyebrow{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);}
 .contact-hero h1{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(40px,7vw,76px);line-height:1.02;margin:14px 0 0;text-transform:uppercase;letter-spacing:.5px;}
 .contact-hero .lead{max-width:600px;margin:18px auto 0;color:rgba(255,255,255,.72);font-size:clamp(16px,2vw,19px);line-height:1.6;}
+/* Two-path chooser — the form and the booking flow are both below the fold,
+   so signpost them here or visitors only ever see the one they land on. */
+.path-picker{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:900px;margin:38px auto 0;text-align:left;}
+.path-card{display:flex;flex-direction:column;padding:26px 26px 22px;border-radius:16px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.15);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:background .2s ease,border-color .2s ease,transform .2s ease;}
+.path-card:hover{background:rgba(255,255,255,0.1);border-color:rgba(37,99,235,0.65);transform:translateY(-3px);}
+.path-label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:10px;}
+.path-title{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(20px,2.4vw,26px);text-transform:uppercase;letter-spacing:.5px;line-height:1.12;color:#fff;margin-bottom:10px;}
+.path-card p{font-size:14.5px;font-weight:300;line-height:1.6;color:rgba(255,255,255,.72);margin-bottom:18px;}
+.path-go{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#fff;}
+.path-go svg{width:16px;height:16px;flex:none;}
+@media(max-width:700px){.path-picker{grid-template-columns:1fr;gap:14px;margin-top:28px;}}
+/* Clear the fixed nav when jumping between the two paths */
+#contact,#book{scroll-margin-top:var(--nav-h);}
 </style>
 </head>
 <body>
@@ -552,8 +571,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="wrap">
     <span class="about-eyebrow">Get In Touch</span>
-    <h1>Let's Get You <em style="color:var(--blue);font-style:normal;">Booked</em></h1>
-    <p class="lead">Tell us about your vehicle and what you're after. We'll get back to you with a personalized quote — usually the same day.</p>
+    <h1>Get a Quote or <em style="color:var(--blue);font-style:normal;">Book Online</em></h1>
+    <p class="lead">Two ways to get started — pick whichever suits you.</p>
+    <div class="path-picker">
+      <a class="path-card" href="#contact">
+        <span class="path-label">Option 1 — Not sure what you need?</span>
+        <span class="path-title">Get a free instant quote</span>
+        <p>Tell us about your vehicle and what's bothering you. We'll come back with a personalized price, usually the same day.</p>
+        <span class="path-go">Use the form below
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        </span>
+      </a>
+      <a class="path-card" href="#book">
+        <span class="path-label">Option 2 — Already know?</span>
+        <span class="path-title">Book online now</span>
+        <p>Pick your service, choose a time and pay up front. Instant confirmation, no waiting on a callback.</p>
+        <span class="path-go">Jump to booking
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        </span>
+      </a>
+    </div>
   </div>
 </header>
 
@@ -562,6 +599,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="contact-grid">
       <div class="contact-info reveal">
+        <span class="book-eyebrow">Option 1</span>
         <h2 class="section-title">Get your <em>free quote</em></h2>
         <p class="section-lead">Tell us about your vehicle and what you're after. We'll get back to you with a personalized quote — usually the same day.</p>
         <ul class="contact-points">
@@ -570,6 +608,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> Mobile service across Raleigh &amp; the Triangle</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg> Open 6 days a week</li>
         </ul>
+        <p class="contact-alt">Don't need a quote? <a class="klink" href="#book">Book online and pay now</a> — it takes about a minute.</p>
       </div>
       <div class="contact-form contact-embed reveal d1">
         <iframe src="https://links.revvedpro.com/widget/form/jAwmx42KGvGcYvzbFVjy"
@@ -591,11 +630,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ===================== BOOK ONLINE ===================== -->
-<section class="book-section">
+<section id="book" class="book-section">
   <div class="wrap">
     <div class="book-grid">
       <div class="book-copy reveal">
-        <span class="book-eyebrow">Already know what you need?</span>
+        <span class="book-eyebrow">Option 2 — Already know what you need?</span>
         <h2 class="section-title">Book <em>online</em></h2>
         <p class="section-lead">Skip the quote entirely. Pick your service, choose a time that works and get instant confirmation — no back-and-forth, no waiting on a callback.</p>
         <a href="https://app.urable.com/virtual-shop/CcDvFd87EQhsZuiL0hGB?utm_source=website&amp;utm_medium=page_footer&amp;utm_campaign=booking" target="_blank" rel="noopener" class="btn btn-dark btn-lg" data-cta="book_now" data-placement="page_footer">
