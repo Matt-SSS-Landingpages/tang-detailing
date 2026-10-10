@@ -281,22 +281,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 @keyframes supp-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
 /* Service area */
-.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;margin-top:20px;}
-.area-map{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--border-dark);aspect-ratio:4/3;}
-.area-map iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(0.12) contrast(1.02);}
-.area-section{position:relative;overflow:hidden;}
-.area-section::before{content:'';position:absolute;inset:0;z-index:0;background-image:linear-gradient(180deg,rgba(9,9,11,0.78),rgba(9,9,11,0.86)),url('/assets/images/detailing-products.jpg');background-size:cover;background-position:center 40%;}
-.area-section::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0.14;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='170' height='170'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:170px 170px;}
-.area-section .wrap{position:relative;z-index:1;}
-.area-section .section-title{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,0.55);}
-.area-section .section-lead{color:rgba(255,255,255,0.74);}
-.area-cities{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px;}
-.area-city{display:flex;align-items:center;gap:12px;padding:16px 18px;background:var(--white);border:1px solid var(--border-dark);border-radius:10px;transition:border-color .2s,transform .2s,box-shadow .2s;}
-.area-city:hover{border-color:var(--blue-border);transform:translateX(4px);box-shadow:0 10px 24px rgba(24,24,27,0.06);}
-.area-city svg{width:18px;height:18px;color:var(--blue);flex-shrink:0;}
-.area-city b{font-size:15px;font-weight:500;color:var(--ink);}
-.area-city small{display:block;font-size:12px;color:var(--ink-soft);font-weight:300;}
-@media(max-width:840px){.area-grid{grid-template-columns:1fr;}}
 
 /* FAQ */
 .faq-list{max-width:840px;margin:44px auto 0;display:flex;flex-direction:column;gap:12px;}
