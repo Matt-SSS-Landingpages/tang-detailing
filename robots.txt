@@ -1,7 +1,8 @@
 User-agent: *
 Allow: /
 
-# Post-conversion page — no SEO value
-Disallow: /thank-you.html
+# /thank-you is kept out of the index with a noindex meta tag, not a Disallow.
+# Blocking it here would stop crawlers from ever reading that tag, which is how
+# pages end up indexed as a bare URL with no title. Crawling must stay allowed.
 
 Sitemap: https://www.tangdetailing.com/sitemap.xml
